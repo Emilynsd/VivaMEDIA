@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    background: #FDFAF1;
+    font-family: 'Kanit', sans-serif;
+}
+
+h1{
+    font-size: 25vh;
+    background-color: #FDFAF1;
+    background-size: auto 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 20s linear infinite;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+
+menu{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+
+.lille-logo{
+    display: flex;
+width: 50px;
+height: 50px;
+justify-content: center;
+align-items: center;
+}
+
+.logo-skrift{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 3em;
+}
+
+.stor-animation{
+    display: flex;
+    width: 1400px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.5em;
+}
+
+.quote{
+    font-size: 20px;
+    font-style: italic;
+    padding-right: 50em;
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+h2{
+    font-size: 25px; 
+    font-style: italic;
+    padding-top: 3em;
+    padding-left: 2em;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+    border-bottom: solid;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  li span{
+    color: #FF8591;;
+  }
+
+  ul{
+    padding-left: 50em;
+  }
+
+
+/*Kontaktformular*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  
+/* Menu */
+
+/*
+@keyframes move{
+    {background-position: center 0;
+} to {background-position: center 200%;}
+}
+*/
+
+/*
+@media only screen and (min-width: 700px) {
+    .menu {
+        display: none;
+
+    }
+
+    header nav {
+        display: block;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        gap: 40px;
+    }
+}
+*/
