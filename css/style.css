@@ -1,6 +1,9 @@
 * {
-    box-sizing: border-box;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+    text-decoration: none;
+    list-style: none;
 }
 
 img {
@@ -9,7 +12,6 @@ img {
 
 body{
     background: #FDFAF1;
-    font-family: 'Kanit', sans-serif;
 }
 
 h1{
