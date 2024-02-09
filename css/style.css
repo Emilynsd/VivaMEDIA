@@ -92,21 +92,31 @@ nav{
 
 /*Forside main*/
 
+.logo-skrift{
+  padding-left: 5em;
+}
+
 .stor-animation{
     display: flex;
-    width: 1400px;
-    height: 700px;
+    width: 87em;
+    height: 43.75em;
     align-items: center;
     justify-content: center;
     padding-left: 2.5em;
 }
 
 .quote{
-    font-size: 20px;
-    font-style: italic;
-    padding-right: 50em;
-    padding-top: 2em;
-    padding-left: 2em;
+  font-size: 40px;
+  font-style: italic;
+
+}
+
+.quote-box{
+  padding-left: 4em;
+  width: 100vh;
+  height: 20vw;
+  padding-top: 5em;
+  margin-bottom: 5em;
 }
 
 li {
@@ -124,7 +134,7 @@ li {
   }
 
   ul{
-    padding-left: 50em;
+    padding-left: 30em;
   }
 
 
@@ -210,21 +220,23 @@ input[type=text], select, textarea {
 }
 */
 
-/*
-@media only screen and (min-width: 700px) {
-    .menu {
-        display: none;
+
+@media only screen and (max-width: 700px) {
+    .quote {
+        font-size: 13px;
 
     }
 
-    header nav {
-        display: block;
+    ul{
+      padding-left: 3em;
     }
-    ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        gap: 40px;
+
+    .quote-box{
+      padding-left: 4em;
+      width: 42vh;
+      height: 20vw;
+      padding-top: 5em;
+      margin-bottom: 5em;
     }
 }
-*/
+
