@@ -19,19 +19,29 @@ body{
 /*Fonts og skriftstr.*/
 
 h1{
-    font-size: 25vh;
-    background-color: #FDFAF1;
-    background-size: auto 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: move 20s linear infinite;
+margin-left: 2em;
+padding-top: 8em;
+padding-bottom: 8em;
 }
 h2{
     font-size: 25px; 
     font-style: italic;
     padding-top: 3em;
     padding-left: 2em;
+}
+
+.quote{
+  font-size: 40px;
+  font-style: italic;
+
+}
+
+.quote-box{
+  padding-left: 20em;
+  width: 100vh;
+  height: 20vw;
+  padding-top: 30em;
+  padding-bottom: 39em;
 }
 
 /*Navigation*/
@@ -52,6 +62,11 @@ nav{
     padding-right: 30px;
     padding-top: 10px;
     font-weight: 700;
+}
+
+.logo{
+
+  
 }
 
 .menu {
@@ -93,30 +108,29 @@ nav{
 /*Forside main*/
 
 .logo-skrift{
-  padding-left: 5em;
+  padding-left: 6em;
 }
 
 .stor-animation{
     display: flex;
-    width: 87em;
-    height: 43.75em;
+    width: 98vw;
+    height: 90vh;
     align-items: center;
     justify-content: center;
-    padding-left: 2.5em;
+    padding-left: 2em;
 }
 
-.quote{
-  font-size: 40px;
-  font-style: italic;
-
+.vi-tilbyder-img{
+  width: 40vw;
+  height: 45vh;
+  position: absolute;
+  margin-left: 2em;
 }
 
-.quote-box{
-  padding-left: 4em;
-  width: 100vh;
-  height: 20vw;
-  padding-top: 5em;
-  margin-bottom: 5em;
+.stjerneskud{
+  position: absolute;
+  right: -10%;
+  top: 283%;
 }
 
 li {
@@ -134,7 +148,7 @@ li {
   }
 
   ul{
-    padding-left: 30em;
+    padding-left: 40em;
   }
 
 
@@ -238,5 +252,33 @@ input[type=text], select, textarea {
       padding-top: 5em;
       margin-bottom: 5em;
     }
+
+    .quote{
+      font-size: 40px;
+    }
+
+    .stjerneskud{
+      right: -10%;
+      top: 265%;
+    }
+
+    .stor-animation{
+      width: 120vw;
+      height: 50vh;
+      padding-left: 2em;
+    }
+
+    .logo-skrift{
+      padding-left: 2em;
+    }
+
+    .vi-tilbyder-img{
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 94vw;
+      height: 40vh;
+    }
+
 }
 
