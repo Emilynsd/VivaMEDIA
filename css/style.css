@@ -127,6 +127,22 @@ nav{
   margin-left: 2em;
 }
 
+.fa-sharp{
+padding-left: 14em;
+}
+
+.fa-sharpo{
+  padding-left: 15em;
+}
+
+.fa-sharph{
+  padding-left: 16.8em;
+}
+
+.fa-sharpm{
+  padding-left: 14.9em;
+}
+
 .stjerneskud{
   position: absolute;
   right: -10%;
