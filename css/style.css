@@ -1,4 +1,4 @@
-/*For indstillinger*/
+/*For-indstillinger*/
 
 * {
     margin: 0;
@@ -68,17 +68,11 @@ nav{
     color: black;
   }
   
-  .menu:hover a {
-    opacity: 0.4;
-  }
+  
   
   .menu a:hover {
     opacity: 1;
     color: #fff;
-  }
-  
-  .menu-icon {
-    display: none;
   }
   
   #menu-toggle {
@@ -109,23 +103,6 @@ nav{
     padding-left: 2em;
 }
 
-li {
-    display: flex;
-    list-style-type: none;
-    border-bottom: solid;
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  li span{
-    color: #FF8591;;
-  }
-
-  ul{
-    padding-left: 50em;
-  }
 
 
 /*Kontaktformular*/
@@ -171,6 +148,7 @@ input[type=text], select, textarea {
     .menu {
       flex-direction: column;
       background-color: #FF8591;
+      align-items: center;
       opacity: 95%;
       position: absolute;
       top: 66px;
@@ -188,7 +166,7 @@ input[type=text], select, textarea {
       font-size: 28px;
       align-items: center;
     }
-  
+   
     .menu li {
       margin-bottom: 10px;
       align-items: center;
