@@ -296,5 +296,21 @@ input[type=text], select, textarea {
       height: 40vh;
     }
 
+    .fa-sharp{
+      padding-left: 1em;
+      }
+      
+      .fa-sharpo{
+        padding-left: 2em;
+      }
+      
+      .fa-sharph{
+        padding-left: 3.8em;
+      }
+      
+      .fa-sharpm{
+        padding-left: 1.8em;
+      }
+
 }
 
