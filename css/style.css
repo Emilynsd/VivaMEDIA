@@ -118,7 +118,7 @@ nav{
     padding-left: 2em;
 }
 
-li {
+main li {
     display: flex;
     list-style-type: none;
     border-bottom: solid;
@@ -131,8 +131,8 @@ li {
   li span{
     color: #FF8591;;
   }
-
-  ul{
+  
+main ul{
     padding-left: 50em;
   }
 
