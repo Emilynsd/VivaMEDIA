@@ -39,7 +39,7 @@ h2{
   padding-left: 20em;
   width: 100vh;
   height: 20vw;
-  padding-top: 30em;
+  padding-top: 50em;
   padding-bottom: 39em;
 }
 
@@ -62,10 +62,13 @@ nav{
     font-weight: 700;
 }
 
-.logo{
 
-  
+.logo-container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
+
 
 .menu {
     display: flex;
@@ -103,22 +106,30 @@ nav{
 
 .stor-animation{
     display: flex;
-    width: 1400px;
-    height: 700px;
+    width: 98vw;
+    height: 90vh;
     align-items: center;
     justify-content: center;
     padding-left: 2.5em;
 }
 
-.quote{
-    font-size: 20px;
-    font-style: italic;
-    padding-right: 50em;
-    padding-top: 2em;
-    padding-left: 2em;
+.vi-tilbyder-img{
+  width: 40vw;
+  height: 45vh;
+  position: absolute;
+  margin-left: 2em;
 }
 
-main li {
+
+.stjerneskud{
+  position: absolute;
+  top: 360%; /* Adjust positioning as needed */
+  left: 60%; /* Adjust positioning as needed */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+
+li {
     display: flex;
     list-style-type: none;
     border-bottom: solid;
@@ -133,7 +144,7 @@ main li {
   }
   
 main ul{
-    padding-left: 50em;
+    padding-left: 40em;
   }
 
 
@@ -217,13 +228,6 @@ input[type=text], select, textarea {
   }
 
 
-/*
-@keyframes move{
-    {background-position: center 0;
-} to {background-position: center 200%;}
-}
-*/
-
 
 @media only screen and (max-width: 700px) {
     .quote {
@@ -239,7 +243,7 @@ input[type=text], select, textarea {
       padding-left: 4em;
       width: 42vh;
       height: 20vw;
-      padding-top: 5em;
+      padding-top: 17em;
       margin-bottom: 5em;
     }
 
@@ -249,13 +253,13 @@ input[type=text], select, textarea {
 
     .stjerneskud{
       right: -10%;
-      top: 265%;
+      top: 295%;
     }
 
     .stor-animation{
       width: 120vw;
       height: 50vh;
-      padding-left: 2em;
+
     }
 
     .logo-skrift{
@@ -285,6 +289,11 @@ input[type=text], select, textarea {
       .fa-sharpm{
         padding-left: 1.8em;
       }
+      
+    main ul{
+        padding-left: 2em;
+      }
+    
 
 }
 
