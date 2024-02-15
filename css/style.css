@@ -188,8 +188,20 @@ main ul{
     margin-left: 28.5em;
   }
 
+  
 
 /*Kontaktformular*/
+
+.lad-os-tale h4{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.lad-os-tale p{
+  font-size: 24px;
+  font-weight: 200;
+}
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
