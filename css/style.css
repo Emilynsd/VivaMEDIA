@@ -29,6 +29,37 @@ h2{
     padding-left: 2em;
 }
 
+h3{
+  font-size: 30px;
+text-align: center;
+font-weight: bold;
+
+}
+
+h3 p{
+font-weight: lighter;
+line-height: 2;
+  font-size: 16px;
+  padding-left: 10em;
+  padding-right: 10em;
+  text-align: center;
+  padding-top: 2em;
+}
+
+
+*/*
+.skræddersy-tekst-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 80vw;
+  margin-left: 5em;
+  padding-top: 4em;
+
+}
+*/
+
 .quote{
   font-size: 40px;
   font-style: italic;
