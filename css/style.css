@@ -22,9 +22,11 @@ margin-left: 2em;
 padding-top: 8em;
 padding-bottom: 8em;
 }
+
 h2{
-    font-size: 25px; 
+    font-size: 30px; 
     font-style: italic;
+    font-weight: bold;
     padding-top: 3em;
     padding-left: 2em;
 }
@@ -40,25 +42,18 @@ h3 p{
 font-weight: lighter;
 line-height: 2;
   font-size: 16px;
-  padding-left: 10em;
-  padding-right: 10em;
-  text-align: center;
+  padding-left: 25em;
+  padding-right: 25em;
+  text-align: left;
   padding-top: 2em;
 }
 
-
-*/*
-.skræddersy-tekst-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 80vw;
-  margin-left: 5em;
-  padding-top: 4em;
-
+h4{
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-top: 10em;
 }
-*/
 
 .quote{
   font-size: 40px;
@@ -176,6 +171,21 @@ li {
   
 main ul{
     padding-left: 40em;
+  }
+
+  .skræddersy-knap{
+    background-color: #000000;  
+    padding: 2px; 
+    margin-top: 2em;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    width: 10vw;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    margin-left: 28.5em;
   }
 
 
@@ -308,8 +318,8 @@ input[type=submit]:hover {
       padding-left: 4em;
       width: 42vh;
       height: 20vw;
-      padding-top: 17em;
-      margin-bottom: 5em;
+      padding-top: 30em;
+      margin-bottom: 20em;
     }
 
     .quote{
@@ -318,7 +328,7 @@ input[type=submit]:hover {
 
     .stjerneskud{
       right: -10%;
-      top: 295%;
+      top: 320%;
     }
 
     .stor-animation{
@@ -359,6 +369,18 @@ input[type=submit]:hover {
         padding-left: 2em;
       }
     
+h3 p{
+padding-left: 1px;
+padding-right: 1px;
+margin-left: 1em;
+}
+
+.skræddersy-knap{
+  padding: 2px; 
+  width: 40vw;
+  margin-left: 1em;
+  margin-top: 2em;
+}
 
 }
 
