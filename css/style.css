@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Kanit';
     text-decoration: none;
-    list-style: none;
+
 }
 
 img {
@@ -152,6 +152,80 @@ nav{
   top: 360%; /* Adjust positioning as needed */
   left: 60%; /* Adjust positioning as needed */
   transform: translate(-50%, -50%); /* Center the element */
+}
+
+
+/* Hide the checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the label as the list item */
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Style the label text and add the plus sign */
+label {
+  display: block;
+  cursor: pointer;
+  flex: none;
+  color: #FF8591;
+  text-shadow: -0.5px -0.5px 0 #6E0E0E, 0.5px -0.5px 0 #6E0E0E, -0.5px 0.5px 0 #6E0E0E, 0.5px 0.5px 0 #6E0E0E /* Add a stroke effect */
+}
+
+label::before {
+  content: '+';
+  margin-left: 0; /* Reset margin */
+  display: flex;
+  justify-content: flex-start;
+  float: left;
+  padding-right: 1em;
+  color: #000000;
+}
+
+/* Hide the content by default */
+.expand-content {
+  display: none;
+}
+
+/* Show the content when the checkbox is checked */
+input:checked + label + .expand-content {
+  display: block;
+}
+
+.tekst-box-expand{
+  padding-left: 3em;
+}
+
+li p{
+  font-size: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  /* Stack content underneath the label on smaller screens */
+  li {
+    flex-direction: column;
+  }
+
+  /* Reset styles for labels and plus signs */
+  label {
+    flex: none;
+  }
+
+  label::before {
+      content: '+';
+      margin-left: 0; /* Reset margin */
+      display: flex;
+      justify-content: flex-start;
+      float: left;
+      padding-right: 1em;
+    }
 }
 
 
