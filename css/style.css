@@ -245,12 +245,16 @@ input[type=submit]:hover {
 .side-footer h6{
   font-size: 30px;
   padding-bottom: 2%;
+  padding-top: 2%;
 }
 .side-footer p{
   font-size: 24px;
   font-weight: 300;
 }
 
+.logo-hvid{
+  padding-top: 10%;
+}
 
 .side-footer>* {
 	flex: 0 0 33.333%;
