@@ -235,30 +235,31 @@ input[type=submit]:hover {
 }
 
 /*Footer*/
-.footer-section {
-  position: relative;
+.side-footer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
   background-color: #FF8591;
 }
 
-.single-cta i {
-  color: #FFFEFC;
+.side-footer h6{
   font-size: 30px;
-  float: left;
-  margin-top: 8px;
+  padding-bottom: 2%;
 }
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
+.side-footer p{
+  font-size: 24px;
+  font-weight: 300;
 }
-.cta-text h4 {
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.cta-text span {
-  color: black;
-  font-size: 15px;
+
+
+.side-footer>* {
+	flex: 0 0 33.333%;
+	/* Setting a minimum size will 
+	ensure that they content wraps on
+	smaller screens */
+	min-width: 300px;
+	/* Rest is for pure display */
+	text-align: center;
 }
 
   
