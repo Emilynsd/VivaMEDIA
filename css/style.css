@@ -262,7 +262,27 @@ main ul{
     margin-left: 28.5em;
   }
 
-  
+
+/*Laer vores stjerneteam*/
+
+.team{
+  padding-bottom: 10%;
+  hyphens: auto;
+}
+
+.team h4{
+  padding-top: 0;
+  padding-bottom: 1%;
+  font-size: 48px;
+}
+.team p{
+  font-size: 22px;
+  font-weight: 200;
+  padding-right: 50%;
+  padding-top: 6px;
+  hyphens: auto;
+}
+
 
 /*Kontaktformular*/
 
@@ -277,7 +297,7 @@ main ul{
   padding-left: 260px;
   padding-right: 260px;
   padding-top: 1%;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
 
 }
