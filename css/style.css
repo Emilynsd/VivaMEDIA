@@ -161,7 +161,7 @@ input[type="checkbox"] {
 }
 
 /* Style the label as the list item */
-li {
+main li {
   list-style: none;
   margin-bottom: 10px;
   display: flex;
@@ -170,7 +170,7 @@ li {
 }
 
 /* Style the label text and add the plus sign */
-label {
+main label {
   display: block;
   cursor: pointer;
   flex: none;
@@ -202,7 +202,7 @@ input:checked + label + .expand-content {
   padding-left: 3em;
 }
 
-li p{
+main li p{
   font-size: 20px;
 }
 
@@ -229,7 +229,7 @@ li p{
 }
 
 
-li {
+main li {
     display: flex;
     list-style-type: none;
     border-bottom: solid;
