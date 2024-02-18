@@ -264,10 +264,15 @@ main ul{
 
 /*Vores projekter*/
 
-.frame img {
-  width:90%;
+.frame {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  padding: 200px;
+}
+.frame2{
+  display: flex;
+  flex-direction: column;
 }
 
 /*Laer vores stjerneteam*/
