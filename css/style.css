@@ -178,7 +178,7 @@ label {
   text-shadow: -0.5px -0.5px 0 #6E0E0E, 0.5px -0.5px 0 #6E0E0E, -0.5px 0.5px 0 #6E0E0E, 0.5px 0.5px 0 #6E0E0E /* Add a stroke effect */
 }
 
-label::before {
+main label::before {
   content: '+';
   margin-left: 0; /* Reset margin */
   display: flex;
@@ -281,6 +281,15 @@ main ul{
   padding-right: 50%;
   padding-top: 6px;
   hyphens: auto;
+}
+.quote2{
+  float: right;
+  padding-top: 10%;
+  padding-left: 5%;
+  width: 50%;
+  font-size: 40px;
+  font-style: italic;
+  
 }
 
 
