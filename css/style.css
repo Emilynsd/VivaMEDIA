@@ -218,7 +218,7 @@ main li p{
     flex: none;
   }
 
-  label::before {
+ main label::before { 
       content: '+';
       margin-left: 0; /* Reset margin */
       display: flex;
