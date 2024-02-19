@@ -58,6 +58,7 @@ h4{
   padding-top: 10em;
 }
 
+/*
 .quote{
   font-size: 40px;
   font-family: "Kanit", sans-serif;
@@ -74,7 +75,7 @@ h4{
   padding-bottom: 39em;
 
 }
-
+*/
 /*Navigation*/
 
 .header {
@@ -152,14 +153,21 @@ nav{
   margin-left: 2em;
 }
 
-
-.stjerneskud{
-  position: absolute;
-  top: 360%; /* Adjust positioning as needed */
-  left: 60%; /* Adjust positioning as needed */
-  transform: translate(-50%, -50%); /* Center the element */
+.space-peak{
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
+/*
+.stjerneskud{
+  position: absolute;
+  top: 360%; 
+  left: 60%;
+  transform: translate(-50%, -50%); 
+}
+*/
 
 /* EXPAND */
 input[type="checkbox"] {
