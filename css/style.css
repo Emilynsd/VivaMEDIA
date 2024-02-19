@@ -273,34 +273,19 @@ main ul{
 
 /*Vores projekter*/
 
-.outer{
-  height: 100%;
-  width:66.66%;
-  display:flex;
-  flex-direction:row;
-  align-items: center;
-  }
-
-.inner-left{
-  height: 300px;
-  width:100%;
-  }
-
-.fullimg{
-  height:700px;
-  width:100%;
+.row{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
 }
-
-.inner-right{
-  height:350px;
-  width:33.33%%;
-  display:flex;
-  flex-direction:column;
+.frame-left{
+  width: 66.66%;
 }
-
-.smallimg{
-  width:100%;
-  height:100%;
+.frame-right{
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  padding:
 }
 
 @media only screen and (max-width: 425px){
