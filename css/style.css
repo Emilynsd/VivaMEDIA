@@ -217,12 +217,12 @@ main li p{
 /* Media query for smaller screens */
 @media (max-width: 767px) {
   /* Stack content underneath the label on smaller screens */
-  li {
+ main li {
     flex-direction: column;
   }
 
   /* Reset styles for labels and plus signs */
-  label {
+ main label {
     flex: none;
   }
 
@@ -247,7 +247,7 @@ main li {
     font-weight: bold;
   }
 
-  li span{
+ main li span{
     color: #FF8591;;
   }
   
@@ -425,6 +425,7 @@ input[type=submit]:hover {
       transform: scale(1, 0);
       transform-origin: top;
       transition: transform 0.3s ease-in-out;
+      list-style: none;
     }
   
     .menu a {
