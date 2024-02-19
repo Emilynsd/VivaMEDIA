@@ -255,33 +255,56 @@ main ul{
     padding-left: 40em;
   }
 
-  .skræddersy-knap{
-    background-color: #000000;  
-    padding: 2px; 
+  .btn{ 
+    display: block;
+    padding: 2px 2px; 
     margin-top: 2em;
+    margin-left: 22%;
+    float: left;
+    background-color: #000000; 
     color: white;
     text-decoration: none;
     border-radius: 20px;
-    display: block;
-    width: 10vw;
-    font-size: 14px;
+    width: 13%;
+    font-size: 20px;
     text-align: center;
-    float: left;
-    margin-left: 28.5em;
+    font-weight: 100;
   }
 
 /*Vores projekter*/
 
-.frame {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 200px;
+.outer{
+  height: 100%;
+  width:66.66%;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  }
+
+.inner-left{
+  height: 300px;
+  width:100%;
+  }
+
+.fullimg{
+  height:700px;
+  width:100%;
 }
-.frame2{
-  display: flex;
-  flex-direction: column;
+
+.inner-right{
+  height:350px;
+  width:33.33%%;
+  display:flex;
+  flex-direction:column;
 }
+
+.smallimg{
+  width:100%;
+  height:100%;
+}
+
+@media only screen and (max-width: 425px){
+  .outer{flex-direction:column!important;}}
 
 /*Laer vores stjerneteam*/
 
@@ -521,7 +544,7 @@ padding-right: 1px;
 margin-left: 1em;
 }
 
-.skræddersy-knap{
+.btn{
   padding: 2px; 
   width: 40vw;
   margin-left: 1em;
