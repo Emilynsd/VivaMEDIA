@@ -58,24 +58,6 @@ h4{
   padding-top: 10em;
 }
 
-/*
-.quote{
-  font-size: 40px;
-  font-family: "Kanit", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-
-}
-
-.quote-box{
-  padding-left: 20em;
-  width: 100vh;
-  height: 20vw;
-  padding-top: 50em;
-  padding-bottom: 39em;
-
-}
-*/
 /*Navigation*/
 
 .header {
@@ -159,15 +141,6 @@ nav{
   padding-top: 5em;
   padding-bottom: 5em;
 }
-
-/*
-.stjerneskud{
-  position: absolute;
-  top: 360%; 
-  left: 60%;
-  transform: translate(-50%, -50%); 
-}
-*/
 
 /* EXPAND */
 input[type="checkbox"] {
