@@ -62,6 +62,12 @@ h4{
   padding-top: 15em;
 }
 
+.hvem-er-vi-tekst{
+  width: 50vw;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
 /*Navigation*/
 
 .header {
@@ -197,6 +203,7 @@ input:checked + label + .expand-content {
 
 main li p{
   font-size: 20px;
+  font-weight: 100;
 }
 
 /* Media query for smaller screens */
@@ -524,5 +531,11 @@ margin-left: 1em;
   margin-top: 2em;
 }
 
+}
+
+/*om os side*/
+.om-os-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
