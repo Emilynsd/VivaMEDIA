@@ -637,4 +637,27 @@ margin-left: 1em;
 
 .team-gallery{
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 2em;
+  gap: 20px;
+  row-gap: 100px;
+}
+
+
+.team-member {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image column and paragraph column */
+  gap: 10px; /* Adjust the space between image and paragraph */
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-member p {
+  text-align: left; /* Adjust text alignment as needed */
+  margin: 0; /* Remove default margin for better alignment */
 }
