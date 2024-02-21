@@ -58,24 +58,16 @@ h4{
   padding-top: 10em;
 }
 
-/*
-.quote{
-  font-size: 40px;
-  font-family: "Kanit", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-
+.vores-projekter{
+  padding-top: 15em;
 }
 
-.quote-box{
-  padding-left: 20em;
-  width: 100vh;
-  height: 20vw;
-  padding-top: 50em;
-  padding-bottom: 39em;
-
+.hvem-er-vi-tekst{
+  width: 50vw;
+  padding-left: 2em;
+  padding-top: 2em;
 }
-*/
+
 /*Navigation*/
 
 .header {
@@ -160,15 +152,6 @@ nav{
   padding-bottom: 5em;
 }
 
-/*
-.stjerneskud{
-  position: absolute;
-  top: 360%; 
-  left: 60%;
-  transform: translate(-50%, -50%); 
-}
-*/
-
 /* EXPAND */
 input[type="checkbox"] {
   display: none;
@@ -220,6 +203,7 @@ input:checked + label + .expand-content {
 
 main li p{
   font-size: 20px;
+  font-weight: 100;
 }
 
 /* Media query for smaller screens */
@@ -547,5 +531,11 @@ margin-left: 1em;
   margin-top: 2em;
 }
 
+}
+
+/*om os side*/
+.om-os-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
