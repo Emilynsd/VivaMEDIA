@@ -534,8 +534,74 @@ margin-left: 1em;
 }
 
 /*om os side*/
+
+/*fonter og tekst*/
+.om-os-grid p{
+  padding-left: 2em;
+}
+
 .om-os-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* Updated styles for expanding checkboxes */
+.om-os-grid li {
+  margin-bottom: 10px;
+  list-style: none; /* Remove bullet point */
+  border-bottom: solid;
+}
+
+.om-os-grid ul{
+  margin-top: 4em;
+}
+
+.om-os-grid input[type="checkbox"] {
+  display: none; /* Hide the checkbox */
+}
+
+.om-os-grid label {
+  cursor: pointer;
+  color: #FF8591;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.om-os-grid label::before {
+  content: '+';
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.om-os-grid .expand-content {
+  display: none;
+  padding-left: 25px; /* Adjust as needed */
+}
+
+.om-os-grid input:checked + label + .expand-content {
+  display: block;
+}
+
+.om-os-grid li p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .om-os-grid li {
+    flex-direction: column;
+  }
+
+  .om-os-grid label::before {
+    content: '+';
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    padding-right: 1em;
+    font-weight: bold;
+  }
 }
 
