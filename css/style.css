@@ -383,9 +383,23 @@ input[type=submit]:hover {
 
 /*Vores projekter galleri side*/
 
-.projektgalleri :first-child{
- padding-left: 90px;
+.projektgalleri{
+  text-align: center;
 }
+
+.projektgalleri h2{
+  font-style: normal;
+  font font-weight: 200px;
+  text-align: left;
+}
+
+.mainprojekt{
+  display: flex;
+  width: 1506px;
+  height: 585px;
+  width: 100%;
+}
+
 
 
 /*Footer*/
