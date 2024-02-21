@@ -577,7 +577,7 @@ margin-left: 1em;
 /* EXBAND på OM OS */
 .om-os-grid li {
   margin-bottom: 10px;
-  list-style: none; /* Remove bullet point */
+  list-style: none;
   border-bottom: solid;
 }
 
@@ -586,7 +586,7 @@ margin-left: 1em;
 }
 
 .om-os-grid input[type="checkbox"] {
-  display: none; /* Hide the checkbox */
+  display: none; 
 }
 
 .om-os-grid label {
@@ -595,6 +595,7 @@ margin-left: 1em;
   display: flex;
   align-items: center;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .om-os-grid label::before {
@@ -689,6 +690,7 @@ font-size: 20px;
 @media only screen and (max-width: 800px){
   .team-gallery{
       grid-template-columns: 1fr;
+      padding-left: 2em;
   }
 
   .team-gallery{
@@ -706,5 +708,9 @@ font-size: 20px;
   .member-name{
 position: static;
     }
+
+  .om-os-grid{
+    grid-template-columns: 1fr;
+  }
 
 }
