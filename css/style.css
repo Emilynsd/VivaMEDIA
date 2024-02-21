@@ -618,7 +618,7 @@ margin-left: 1em;
   font-weight: 100;
 }
 
-/* Media query for smaller screens */
+/* Media query for mindre skærme */
 @media (max-width: 767px) {
   .om-os-grid li {
     flex-direction: column;
@@ -635,6 +635,8 @@ margin-left: 1em;
   }
 }
 
+/* Billeder af teamet med tekst; styling */
+
 .team-gallery{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -646,22 +648,27 @@ margin-left: 1em;
 
 
 .team-member {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Image column and paragraph column */
-  gap: 10px; /* Adjust the space between image and paragraph */
+  gap: 10px; 
+  position:relative;
 }
 
 .team-member img {
-  width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .team-member p {
-  text-align: left; /* Adjust text alignment as needed */
-  margin: 0; /* Remove default margin for better alignment */
-  padding-top: 5em;
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 2em;
+  padding-right: 7em;
 }
+
+.member-name{
+font-weight: bold;
+font-size: 20px;
+}
+
 
 
 .quote-2{
@@ -676,4 +683,28 @@ margin-left: 1em;
   margin-left: auto;
   margin-bottom: 5em;
   margin-top: 5em;
+}
+
+/* Media queries for OM OS side */
+@media only screen and (max-width: 800px){
+  .team-gallery{
+      grid-template-columns: 1fr;
+  }
+
+  .team-gallery{
+      grid-template-columns: 99%;
+  }
+
+  .team-member p{
+    padding: 0.1em;
+  }  
+
+  .team-member{
+    grid-template-columns: 1fr; 
+  }
+
+  .member-name{
+position: static;
+    }
+
 }
