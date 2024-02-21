@@ -400,7 +400,18 @@ input[type=submit]:hover {
   width: 100%;
 }
 
+.projekt2{
+  float: left;
+}
 
+.projekt34{
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+.projekt5{
+  padding-top: 40%;
+}
 
 /*Footer*/
 .side-footer {
