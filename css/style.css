@@ -635,3 +635,6 @@ margin-left: 1em;
   }
 }
 
+.team-gallery{
+  display: grid;
+}
