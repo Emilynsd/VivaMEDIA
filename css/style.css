@@ -18,8 +18,6 @@ body{
 /*Fonts og skriftstr.*/
 
 h1{
-padding-top: 8em;
-padding-bottom: 8em;
   font-family: "Kanit", sans-serif;
   font-weight: 100;
   font-style: italic;
@@ -136,6 +134,11 @@ nav{
     align-items: center;
     justify-content: center;
     padding-left: 2.5em;
+}
+
+.stor-animation h1{
+  padding-top: 8em;
+  padding-bottom: 8em;
 }
 
 .vi-tilbyder-img{
@@ -377,6 +380,28 @@ input[type=submit]:hover {
   padding-top: 1%;
 }
 
+
+/*Vores projekter galleri side*/
+
+.projektgalleri{
+  text-align: center;
+}
+
+.projektgalleri h2{
+  font-style: normal;
+  font font-weight: 200px;
+  text-align: left;
+}
+
+.mainprojekt{
+  display: flex;
+  width: 1506px;
+  height: 585px;
+  width: 100%;
+}
+
+
+
 /*Footer*/
 .side-footer {
 	display: flex;
@@ -398,6 +423,10 @@ input[type=submit]:hover {
 .logo-hvid{
   padding-top: 10%;
 }
+
+
+/*Responsive indstillinger*/
+
 
 .side-footer>* {
 	flex: 0 0 33.333%;
