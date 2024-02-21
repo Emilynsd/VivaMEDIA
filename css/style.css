@@ -637,8 +637,8 @@ margin-left: 1em;
 
 .team-gallery{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-top: 2em;
   gap: 20px;
   row-gap: 100px;
@@ -660,4 +660,20 @@ margin-left: 1em;
 .team-member p {
   text-align: left; /* Adjust text alignment as needed */
   margin: 0; /* Remove default margin for better alignment */
+  padding-top: 5em;
+}
+
+
+.quote-2{
+  font-size: 35px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  width: 50vw;
+  margin-left: auto;
+  margin-bottom: 5em;
+  margin-top: 5em;
 }
