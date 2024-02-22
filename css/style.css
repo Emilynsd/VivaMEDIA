@@ -588,7 +588,7 @@ margin-left: 1em;
 /* EXBAND på OM OS */
 .om-os-grid li {
   margin-bottom: 10px;
-  list-style: none; /* Remove bullet point */
+  list-style: none;
   border-bottom: solid;
 }
 
@@ -597,7 +597,7 @@ margin-left: 1em;
 }
 
 .om-os-grid input[type="checkbox"] {
-  display: none; /* Hide the checkbox */
+  display: none; 
 }
 
 .om-os-grid label {
@@ -606,6 +606,7 @@ margin-left: 1em;
   display: flex;
   align-items: center;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .om-os-grid label::before {
@@ -629,7 +630,7 @@ margin-left: 1em;
   font-weight: 100;
 }
 
-/* Media query for smaller screens */
+/* Media query for mindre skærme */
 @media (max-width: 767px) {
   .om-os-grid li {
     flex-direction: column;
@@ -646,10 +647,12 @@ margin-left: 1em;
   }
 }
 
+/* Billeder af teamet med tekst; styling */
+
 .team-gallery{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-top: 2em;
   gap: 20px;
   row-gap: 100px;
@@ -657,18 +660,68 @@ margin-left: 1em;
 
 
 .team-member {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Image column and paragraph column */
-  gap: 10px; /* Adjust the space between image and paragraph */
+  gap: 10px; 
+  position:relative;
 }
 
 .team-member img {
-  width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .team-member p {
-  text-align: left; /* Adjust text alignment as needed */
-  margin: 0; /* Remove default margin for better alignment */
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 2em;
+  padding-right: 7em;
+}
+
+.member-name{
+font-weight: bold;
+font-size: 20px;
+}
+
+
+
+.quote-2{
+  font-size: 35px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  width: 50vw;
+  margin-left: auto;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+/* Media queries for OM OS side */
+@media only screen and (max-width: 800px){
+  .team-gallery{
+      grid-template-columns: 1fr;
+      padding-left: 2em;
+  }
+
+  .team-gallery{
+      grid-template-columns: 99%;
+  }
+
+  .team-member p{
+    padding: 0.1em;
+  }  
+
+  .team-member{
+    grid-template-columns: 1fr; 
+  }
+
+  .member-name{
+position: static;
+    }
+
+  .om-os-grid{
+    grid-template-columns: 1fr;
+  }
+
 }
