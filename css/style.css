@@ -388,9 +388,12 @@ input[type=submit]:hover {
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
 }
+/*Elementerne internt*/
 
 .item {
   position: relative;
+  font-size: 22px;
+  font-weight: 200;
 }
 
 .item img {
@@ -399,12 +402,15 @@ input[type=submit]:hover {
   display: block;
 }
 
+
+
+/*Projekt 1*/
 .item.large {
   grid-column: span 12;
   padding-top: 3%;
   padding-bottom: 10%;
 }
-
+/*Projekt 2*/
 .item:nth-child(2){
   grid-row: span 14;
   grid-column: span 5;
@@ -416,31 +422,54 @@ input[type=submit]:hover {
   height: 100%;
   object-fit: cover;
 }
-.item:nth-child(3){
-  height: 300px;
-}
-.item:nth-child(4){
-  height: 600px;
-}
 
+/*Projekt 3*/
+.item:nth-child(3){
+  grid-row: span 4;
+}
 .item:nth-child(3),
 .item:nth-child(4){
   grid-column: span 6; /* Sætter antallet af kolonner til at være 6 */
   height: 100%;
   align-self: center; /* Centrerer lodret */
+  margin-left: 8%;
 }
 
-.item.stacked:nth-child(5) {
-  grid-column: span 10; /* Spænder over alle 12 kolonner */
-  justify-content: center;
+/*Projekt 4*/
+.item:nth-child(4) {
+  grid-row: span 10;
 }
+
+.item:nth-child(4) img {
+  height: 600px;
+  object-fit: cover;
+}
+/*Projekt 5*/
+.item.stacked:nth-child(5) {
+  grid-column: auto / span 12; /* Spænder over alle 12 kolonner */
+  height: 400px;
+  justify-self: center;
+  margin-top: 10%;
+}
+
+.item.stacked:nth-child(5) img{
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Projekt 6*/
 .item.stacked:nth-child(6){
-  grid-column: span 10;
-  height: 1000px;
+  grid-column: auto/ span 12;
+  height: 600px;
+  justify-self: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .item.stacked:nth-child(6) img{
   object-fit: cover;
-  height: 100%;}
+  height: 100%;
+}
+  
 
 
 /*Footer*/
