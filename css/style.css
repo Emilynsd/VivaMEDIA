@@ -85,6 +85,7 @@ nav{
     font-weight: 700;
 }
 
+/*Logo*/
 
 .logo-container{
   display: flex;
@@ -92,7 +93,7 @@ nav{
   align-items: center;
 }
 
-
+/*Menu*/
 .menu {
     display: flex;
   }
@@ -127,6 +128,8 @@ nav{
 
 /*Forside main*/
 
+/*Sektion ''Forside animaton*/
+
 .stor-animation{
     display: flex;
     width: 98vw;
@@ -141,18 +144,18 @@ nav{
   padding-bottom: 8em;
 }
 
+/*Sektion ''Vi tilbyder''*/
+
+.vitilbyder {
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .vi-tilbyder-img{
   width: 40vw;
   height: 45vh;
-  position: absolute;
   margin-left: 2em;
-}
-
-.space-peak{
-  display: flex;
-  justify-content: center;
-  padding-top: 5em;
-  padding-bottom: 5em;
 }
 
 /* EXPAND */
@@ -164,9 +167,11 @@ input[type="checkbox"] {
 main li {
   list-style: none;
   margin-bottom: 10px;
+  margin-left: 5%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 70%;
 }
 
 /* Style the label text and add the plus sign */
@@ -185,7 +190,7 @@ main label::before {
   margin-left: 0; /* Reset margin */
   display: flex;
   justify-content: flex-start;
-  float: left;
+  float: right;
   padding-right: 1em;
   color: #000000;
 }
@@ -226,7 +231,7 @@ main li p{
       margin-left: 0; /* Reset margin */
       display: flex;
       justify-content: flex-start;
-      float: left;
+      float: right;
       padding-right: 1em;
     }
 }
@@ -265,8 +270,15 @@ main ul{
     text-align: center;
     font-weight: 100;
   }
+/*Quote i stjernehimmel*/
+.space-peak{
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
 
-/*Vores projekter*/
+/*Sektion ''Vores projekter''*/
 
 .row{
   display: flex;
@@ -289,7 +301,7 @@ main ul{
 @media only screen and (max-width: 425px){
   .outer{flex-direction:column!important;}}
 
-/*Laer vores stjerneteam*/
+/*Sektion ''Laer vores stjerneteam''*/
 
 .team{
   padding-bottom: 10%;
