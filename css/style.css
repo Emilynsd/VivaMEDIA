@@ -130,6 +130,10 @@ nav{
 
 /*Sektion ''Forside animaton*/
 
+.vitilbyder{
+  display: flex;
+}
+
 .stor-animation{
     display: flex;
     width: 98vw;
@@ -145,16 +149,15 @@ nav{
 }
 
 /*Sektion ''Vi tilbyder''*/
-
-.vitilbyder {
+.vitilbyder{
   display: flex;
-  flex-direction: row;
-  
+  flex-wrap: wrap;
 }
 
 .vi-tilbyder-img{
-  width: 40vw;
-  height: 45vh;
+  height: auto;
+  width: 40%;
+  max-width: 40%;
   margin-left: 2em;
 }
 
@@ -171,18 +174,8 @@ main li {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 70%;
-}
-
-/* Style the label text and add the plus sign */
-main label {
-  display: block;
-  cursor: pointer;
-  flex: none;
-  color: #FF8591;
-/*
-  text-shadow: -0.5px -0.5px 0 #6E0E0E, 0.5px -0.5px 0 #6E0E0E, -0.5px 0.5px 0 #6E0E0E, 0.5px 0.5px 0 #6E0E0E /* Add a stroke effect 
-  */
+  width: 60%;
+  object-fit: cover;
 }
 
 main label::before {
@@ -270,6 +263,18 @@ main ul{
     text-align: center;
     font-weight: 100;
   }
+/* Style the label text and add the plus sign */
+main label {
+  display: block;
+  cursor: pointer;
+  flex: none;
+  color: #FF8591;
+/*
+  text-shadow: -0.5px -0.5px 0 #6E0E0E, 0.5px -0.5px 0 #6E0E0E, -0.5px 0.5px 0 #6E0E0E, 0.5px 0.5px 0 #6E0E0E /* Add a stroke effect 
+  */
+}
+
+main 
 /*Quote i stjernehimmel*/
 .space-peak{
   display: flex;
@@ -602,10 +607,9 @@ input[type=submit]:hover {
     }
 
     .vi-tilbyder-img{
-      position: relative;
       top: auto;
-      left: auto;
-      width: 94vw;
+      margin-left: 0;
+      width: 100%;
       height: 40vh;
     }
 
