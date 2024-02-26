@@ -140,7 +140,7 @@ nav{
 
 /*Forside main*/
 
-/*Sektion ''Forside animaton*/
+/*Sektion ''Forside animaton''*/
 
 .stor-animation{
     display: flex;
@@ -175,7 +175,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-/* Style the label as the list item */
+/* Vi tilbyder liste */
 main li {
   list-style: none;
   margin-bottom: 10px;
@@ -255,9 +255,12 @@ main label {
   cursor: pointer;
   flex: none;
   color: #FF8591;
-/*
-  text-shadow: -0.5px -0.5px 0 #6E0E0E, 0.5px -0.5px 0 #6E0E0E, -0.5px 0.5px 0 #6E0E0E, 0.5px 0.5px 0 #6E0E0E /* Add a stroke effect 
-  */
+}
+/*pakke*/
+.pakke{
+  padding-bottom: 6%;
+  padding-top: 3%;
+  background-color: #FDFAF1;
 }
 
 
@@ -331,6 +334,8 @@ main label {
 
 /*Kontaktformular*/
 
+.lad-os-tale{
+}
 
 .lad-os-tale h5{
   text-align: center;
@@ -521,6 +526,7 @@ input[type=submit]:hover {
   margin-right: 5px;
   font-weight: bold;
   color: #000000;
+  float: right;
 }
 
 .om-os-grid .expand-content {
