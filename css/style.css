@@ -235,6 +235,7 @@ main li {
 main ul{
   height: auto;
   width: 55%;
+  padding-top: 4%;
   }
 
   .btn{ 
@@ -280,8 +281,9 @@ main label {
   width: 100%;
   flex-direction: row;
   justify-content: center;
-  margin: 1%;
   padding-right: 6%;
+  padding-bottom: 7%;
+  padding-top: 2%;
 }
 .frame-left{
   padding-right: 2%;
@@ -309,8 +311,17 @@ main label {
 .team p{
   padding-right: 50%;
   padding-top: 6px;
+  padding-bottom: 1%;
   hyphens: auto;
 }
+.btn2{
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+}
+
 .quote2{
   float: right;
   padding-top: 10%;
@@ -324,22 +335,22 @@ main label {
 
 /*Kontaktformular*/
 
+
 .lad-os-tale h5{
   text-align: center;
-  padding-right: 100px;
   font-weight: 700;
 }
 .lad-os-tale p{
   text-align: left;
-  padding-left: 260px;
-  padding-right: 260px;
+  padding-left: 25%;
+  padding-right: 25%;
   padding-top: 1%;
   font-weight: 200;
-
+  hyphens: auto;
 }
 
 
-/* Style inputs with type="text", select elements and textareas */
+/* Style inputs m. type="text",*/
 input[type=text], select, textarea {
   font-size: 18px;
   width: 100%; /* Full width */
@@ -373,14 +384,14 @@ input[type=submit]:hover {
   background-color: #FF8591;
 }
 
-/* Add a background color and some padding around the form */
+/* Kontaktformular container */
 .container {
   display: flex;
   justify-content: center; 
   width: 75%;
-  padding-left: 18%;
+  padding-left: 25%;
   padding-bottom: 8%;
-  padding-top: 1%;
+  padding-top: 1em;
 }
 
 
@@ -473,6 +484,63 @@ input[type=submit]:hover {
   height: 100%;
 }
   
+/*Om os side*/
+
+/*fonter og tekst*/
+.om-os-grid p{
+  padding-left: 2em;
+}
+
+.om-os-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* EXBAND på OM OS */
+.om-os-grid li {
+  margin-bottom: 10px;
+  list-style: none;
+  border-bottom: solid;
+}
+
+.om-os-grid ul{
+  margin-top: 4em;
+}
+
+.om-os-grid input[type="checkbox"] {
+  display: none; 
+}
+
+.om-os-grid label {
+  cursor: pointer;
+  color: #FF8591;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.om-os-grid label::before {
+  content: '+';
+  margin-right: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.om-os-grid .expand-content {
+  display: none;
+  padding-left: 25px; /* Adjust as needed */
+}
+
+.om-os-grid input:checked + label + .expand-content {
+  display: block;
+}
+
+.om-os-grid li p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
 
 
 /*Footer*/
@@ -655,62 +723,7 @@ margin-left: 1em;
 
 }
 
-/*Om os side*/
-
-/*fonter og tekst*/
-.om-os-grid p{
-  padding-left: 2em;
-}
-
-.om-os-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/* EXBAND på OM OS */
-.om-os-grid li {
-  margin-bottom: 10px;
-  list-style: none;
-  border-bottom: solid;
-}
-
-.om-os-grid ul{
-  margin-top: 4em;
-}
-
-.om-os-grid input[type="checkbox"] {
-  display: none; 
-}
-
-.om-os-grid label {
-  cursor: pointer;
-  color: #FF8591;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.om-os-grid label::before {
-  content: '+';
-  margin-right: 5px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.om-os-grid .expand-content {
-  display: none;
-  padding-left: 25px; /* Adjust as needed */
-}
-
-.om-os-grid input:checked + label + .expand-content {
-  display: block;
-}
-
-.om-os-grid li p {
-  font-size: 20px;
-  font-weight: 100;
-}
+/*Om os side RESPONSIV*/
 
 /* Media query for mindre skærme */
 @media (max-width: 767px) {
