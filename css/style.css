@@ -142,10 +142,6 @@ nav{
 
 /*Sektion ''Forside animaton*/
 
-.vitilbyder{
-  display: flex;
-}
-
 .stor-animation{
     display: flex;
     width: 98vw;
@@ -171,6 +167,7 @@ nav{
   width: 40%;
   max-width: 40%;
   margin-left: 2em;
+  height: 23em;
 }
 
 /* EXPAND */
@@ -235,8 +232,7 @@ main li {
 main ul{
   height: auto;
   width: 55%;
-  padding-top: 4%;
-  }
+}
 
   .btn{ 
     display: block;
