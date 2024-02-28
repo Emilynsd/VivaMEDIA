@@ -577,7 +577,53 @@ input[type=submit]:hover {
   font-weight: 100;
 }
 
+/* Billeder af teamet med tekst; styling */
 
+.team-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 2em;
+  gap: 20px;
+  row-gap: 100px;
+}
+
+
+.team-member {
+  gap: 10px; 
+  position:relative;
+}
+
+.team-member img {
+  height: auto;
+  object-fit: cover;
+}
+
+.team-member p {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 2em;
+  padding-right: 7em;
+}
+
+.member-name{
+font-weight: bold;
+font-size: 20px;
+}
+
+.quote-2{
+  font-size: 35px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  width: 50vw;
+  margin-left: auto;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
 
 /*Footer*/
 .side-footer {
@@ -602,22 +648,9 @@ input[type=submit]:hover {
 }
 
 
-/*Responsive indstillinger*/
+/*************** Responsive indstillinger *****************/
 
-/*RESPONSIV Footer*/
-.side-footer>* {
-	flex: 0 0 33.333%;
-	/* Setting a minimum size will 
-	ensure that they content wraps on
-	smaller screens */
-	min-width: 300px;
-	/* Rest is for pure display */
-	text-align: center;
-}
-
-  
-  
-/*RESPONSIV Navigation*/
+/*Navigation*/
 @media only screen and (max-width: 2500px) {
     .menu {
       flex-direction: column;
@@ -656,10 +689,13 @@ input[type=submit]:hover {
     
   }
 
-/*RESPONSIV Vi tilbyder*/
+
 /* Media query for smaller screens */
 @media (max-width: 767px) {
-  /* Stack content underneath the label on smaller screens */
+main{
+  padding-top: 15%;
+}
+
  main li {
     flex-direction: column;
   }
@@ -677,7 +713,21 @@ input[type=submit]:hover {
       float: right;
       padding-right: 1em;
     }
+  
+  .stor-animation{
+      width: 100%;
+      height: 50vh;
+    }
+
+  h1{
+    font-size: 24px;
+  }
+  p{
+    font-size: 14px;
+  }
+
   .vitilbyder{
+    width: 100%;
     flex-direction: column;
   }
   .vitilbyder img{
@@ -715,11 +765,6 @@ input[type=submit]:hover {
       top: 320%;
     }
 
-    .stor-animation{
-      width: 120vw;
-      height: 50vh;
-
-    }
 
     .logo-skrift{
       padding-left: 2em;
@@ -786,55 +831,6 @@ margin-left: 1em;
   }
 }
 
-/* Billeder af teamet med tekst; styling */
-
-.team-gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 2em;
-  gap: 20px;
-  row-gap: 100px;
-}
-
-
-.team-member {
-  gap: 10px; 
-  position:relative;
-}
-
-.team-member img {
-  height: auto;
-  object-fit: cover;
-}
-
-.team-member p {
-  text-align: left;
-  margin-top: 10px;
-  padding-left: 2em;
-  padding-right: 7em;
-}
-
-.member-name{
-font-weight: bold;
-font-size: 20px;
-}
-
-
-
-.quote-2{
-  font-size: 35px;
-  font-family: "Kanit", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 2em;
-  width: 50vw;
-  margin-left: auto;
-  margin-bottom: 5em;
-  margin-top: 5em;
-}
 
 /* Media queries for OM OS side */
 @media only screen and (max-width: 800px){
@@ -899,4 +895,14 @@ position: static;
     margin-top: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
     margin-bottom: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
   }
+}
+/*Footer*/
+.side-footer>* {
+	flex: 0 0 33.333%;
+	/* Setting a minimum size will 
+	ensure that they content wraps on
+	smaller screens */
+	min-width: 300px;
+	/* Rest is for pure display */
+	text-align: center;
 }
