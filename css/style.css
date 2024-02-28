@@ -270,14 +270,41 @@ main label {
   background-color: #FDFAF1;
 }
 
-
 /*Quote i stjernehimmel*/
-.space-peak{
+.space-peak {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 5em;
   padding-bottom: 5em;
 }
+
+.space-peak img,
+.space-peak video {
+  max-width: 100%; /* Tilpas billedet og videoen til containerens bredde */
+  display: block; /* For at fjerne eventuelle hvide rum under videoen */
+}
+
+.space-peak video {
+  display: none; /* Skjul videoen som standard */
+}
+
+.space-peak img:hover {
+  transform: scale(1.); /* Ændrer størrelsen til 110% af original størrelse */
+  transition: transform 0.7s ease; /* Tilføjer en glidende overgangseffekt */
+  cursor: pointer;
+  filter: grayscale(100%) brightness(50%); /* Gør billedet sort og hvidt med 50% lysstyrke */
+}
+
+.space-peak img {
+  max-width: 100%; /* Tilpas billedet til containerens bredde */
+  display: block; /* For at fjerne eventuelle hvide rum under billedet */
+  transition: filter 0.3s ease; /* Tilføj en glidende overgangseffekt til billedets filteregenskab */
+}
+
+
+
+
 
 
 /*Sektion ''Vores projekter''*/
@@ -315,7 +342,7 @@ main label {
   padding-bottom: 1%;
 }
 .team p{
-  padding-right: 50%;
+  padding-right: 54%;
   padding-top: 6px;
   padding-bottom: 1%;
   hyphens: auto;
