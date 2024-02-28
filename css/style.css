@@ -522,6 +522,11 @@ input[type=submit]:hover {
 /*Om os side*/
 
 /*fonter og tekst*/
+
+.om-os-baggrund{
+  background-color: #FDFAF1;
+}
+
 .om-os-grid p{
   padding-left: 2em;
 }
