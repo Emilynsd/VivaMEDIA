@@ -39,15 +39,6 @@ font-weight: bold;
 
 }
 
-h3 p{
-font-weight: lighter;
-line-height: 2;
-  font-size: 18px;
-  padding-left: 25em;
-  padding-right: 25em;
-  text-align: left;
-  padding-top: 2em;
-}
 
 h4{
   font-size: 36px;
@@ -269,6 +260,15 @@ main label {
   padding-top: 3%;
   background-color: #FDFAF1;
 }
+.pakke p{
+  font-weight: lighter;
+  line-height: 2;
+  font-size: 18px;
+  padding-left: 25em;
+  padding-right: 25em;
+  text-align: left;
+  padding-top: 2em;
+}
 
 /*Quote i stjernehimmel*/
 .space-peak {
@@ -335,6 +335,7 @@ main label {
 
 .team{
   padding-bottom: 10%;
+  height: 100vh;
 }
 .team h4{
   padding-top: 0;
@@ -631,7 +632,7 @@ font-size: 20px;
 /*Footer*/
 .side-footer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
   background-color: #FF8591;
 }
@@ -694,8 +695,44 @@ font-size: 20px;
 
 /*Media Queries for big screens*/
 @media only screen and (max-width:1675px) {
+  .team{
+    width: 100%;
+    padding: 0;
+  }
+  .quote2{
+    display: none;
+  }
+  .team img{
+    width: 100%;
+  }
+  .team p{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 2%;
+  }
+
+  .pakke{
+    width: 100%;
+  }
+  .pakke p{
+    width: 100%;
+    padding: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .row {
+    flex-direction: column; /* Ændrer layout til en kolonne på mindre skærme */
+    width: 100%;
+  }
+  .frame-left,
+  .frame-right{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   
-}
 
 
 /* Media query for smaller screens */
@@ -741,6 +778,12 @@ main{
   .vitilbyder img{
     width: 100%;
   }
+
+  .vores-projekter{
+    
+  }
+
+
 }
   
 
