@@ -67,11 +67,11 @@ p{
   font-style: normal;
   font-weight: normal;
 }
-
+/*Sektion ''Vores projekter''*/
 .vores-projekter{
   padding-top: 15em;
 }
-
+/*Sektion ''Om os''*/
 .hvem-er-vi-tekst{
   width: 50vw;
   padding-left: 2em;
@@ -89,12 +89,15 @@ p{
 
 nav{
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
     font-weight: 700;
+    z-index: 1000;
 }
 
 /*Logo*/
@@ -139,6 +142,10 @@ nav{
 
 
 /*Forside main*/
+
+main{
+  padding-top: 5%;
+}
 
 /*Sektion ''Forside animaton''*/
 
