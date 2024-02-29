@@ -18,10 +18,12 @@ body{
 /*Fonts og skriftstr.*/
 
 h1{
-  font-family:sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-style: normal;
   text-align: center;
+  font-size: 30px; 
+  padding: 5em;
 }
 
 h2{
@@ -956,4 +958,5 @@ position: static;
 	min-width: 300px;
 	/* Rest is for pure display */
 	text-align: center;
+}
 }
