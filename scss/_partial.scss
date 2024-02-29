@@ -1,0 +1,15 @@
+/*Variabler*/
+$bg-color: #fff; 
+$nav-color: #ffffff;
+$footer-color: #FF8591;
+$primary-color: #FF8591;
+$secondary-color: #FDFAF1;
+$padding: 2em;
+
+@mixin btn($bg-color: $primary-color, $btn-padding: 0.8em 1em){
+    background-color: $bg-color;
+    padding: $btn-padding;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
