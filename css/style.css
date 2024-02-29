@@ -638,8 +638,15 @@ font-size: 20px;
 .side-footer {
 	display: flex;
 	justify-content: space-around;
+<<<<<<< HEAD
+  align-content: center;
+  flex-direction: row;
+=======
 	flex-wrap: wrap;
+>>>>>>> origin/main
   background-color: #FF8591;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .side-footer h6{
@@ -968,7 +975,7 @@ position: static;
 	/* Setting a minimum size will 
 	ensure that they content wraps on
 	smaller screens */
-	min-width: 300px;
+	width: 100%;
 	/* Rest is for pure display */
 	text-align: center;
 }
