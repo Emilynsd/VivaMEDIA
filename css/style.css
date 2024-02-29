@@ -638,8 +638,12 @@ font-size: 20px;
 .side-footer {
 	display: flex;
 	justify-content: space-around;
+<<<<<<< HEAD
   align-content: center;
   flex-direction: row;
+=======
+	flex-wrap: wrap;
+>>>>>>> origin/main
   background-color: #FF8591;
   flex-wrap: wrap;
   text-align: center;
@@ -975,4 +979,6 @@ position: static;
 	/* Rest is for pure display */
 	text-align: center;
 }
+
+
 }
