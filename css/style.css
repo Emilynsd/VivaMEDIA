@@ -235,21 +235,22 @@ main ul{
   width: 55%;
 }
 
-  .btn{ 
-    display: block;
-    padding: 2px 2px; 
-    margin-top: 2em;
-    margin-left: 25%;
-    float: left;
-    background-color: #000000; 
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    width: 13%;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 100;
-  }
+.btn{ 
+  display: block;
+  padding: 2px 2px; 
+  margin-top: 2em;
+  margin-left: 25%;
+  float: left;
+  background-color: #000000; 
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 13%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+}
+
 /* Style the label text and add the plus sign */
 main label {
   display: block;

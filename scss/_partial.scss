@@ -5,12 +5,12 @@ $footer-color: #FF8591;
 $primary-color: #FF8591;
 $secondary-color: #FDFAF1;
 $padding: 2em;
+$btn-padding: 2px 2px;
 
 @mixin btn($bg-color: $primary-color, $btn-padding: 0.8em 1em){
     background-color: $btn-color;
     padding: $btn-padding;
     display: block;
-    padding: 2px 2px; 
     margin-top: 2em;
     margin-left: 25%;
     float: left;
