@@ -26,6 +26,7 @@ h1{
   padding: 5em;
 }
 
+
 h2{
     font-size: 36px; 
     font-style: normal;
@@ -768,6 +769,7 @@ main{
 
   h1{
     font-size: 24px;
+    padding: 1em;
   }
   p{
     font-size: 14px;
@@ -775,10 +777,19 @@ main{
 
   .vitilbyder{
     width: 100%;
+    max-width: 100%;
     flex-direction: column;
   }
-  .vitilbyder img{
+
+  .vi-tilbyder-img{
+    max-width: 100%;
     width: 100%;
+  }
+
+  main ul{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2em;
   }
 
   .vores-projekter{
