@@ -635,18 +635,12 @@ font-size: 20px;
 }
 
 /*Footer*/
+/*Footer*/
 .side-footer {
 	display: flex;
 	justify-content: space-around;
-<<<<<<< HEAD
-  align-content: center;
-  flex-direction: row;
-=======
 	flex-wrap: wrap;
->>>>>>> origin/main
   background-color: #FF8591;
-  flex-wrap: wrap;
-  text-align: center;
 }
 
 .side-footer h6{
@@ -657,6 +651,10 @@ font-size: 20px;
 .side-footer p{
   font-size: 24px;
   font-weight: 300;
+}
+
+.logo-hvid{
+  padding-top: 10%;
 }
 
 .logo-hvid{
