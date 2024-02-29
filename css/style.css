@@ -47,7 +47,7 @@ h4{
   font-size: 36px;
   font-weight: bold;
   font-style: normal;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-top: 10em;
 }
 
@@ -637,7 +637,9 @@ font-size: 20px;
 /*Footer*/
 .side-footer {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+align-content: center;
+flex-direction: column;
 	flex-wrap: wrap;
   background-color: #FF8591;
 }
