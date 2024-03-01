@@ -14,7 +14,7 @@ img {
 }
 
 body{
-    background: #FFFFFF;
+  background-color: partial.$bg-color;
 }
 
 /*Fonts og skriftstr.*/
@@ -230,7 +230,7 @@ main li {
 }
 
 main li span{
-  color: #FF8591;;
+  color: partial.$primary-color;
 }
 
 main ul{
@@ -239,19 +239,7 @@ width: 55%;
 }
 
 .btn{ 
-display: block;
-padding: 2px 2px; 
-margin-top: 2em;
-margin-left: 25%;
-float: left;
-background-color: #000000; 
-color: white;
-text-decoration: none;
-border-radius: 20px;
-width: 13%;
-font-size: 20px;
-text-align: center;
-font-weight: 100;
+  @include partial.btn
 }
 
 /* Style the label text and add the plus sign */
@@ -259,13 +247,13 @@ main label {
 display: block;
 cursor: pointer;
 flex: none;
-color: #FF8591;
+color: partial.$primary-color;
 }
 /*pakke*/
 .pakke{
 padding-bottom: 6%;
 padding-top: 3%;
-background-color: #FDFAF1;
+background-color: partial.$secondary-color;
 }
 .pakke p{
 font-weight: lighter;
@@ -297,7 +285,7 @@ display: none; /* Skjul videoen som standard */
 }
 
 .space-peak img:hover {
-transform: scale(1.); /* Ændrer størrelsen til 110% af original størrelse */
+transform: scale(1.0); /* Ændrer størrelsen til 110% af original størrelse */
 transition: transform 0.7s ease; /* Tilføjer en glidende overgangseffekt */
 cursor: pointer;
 filter: grayscale(100%) brightness(50%); /* Gør billedet sort og hvidt med 50% lysstyrke */
@@ -354,12 +342,9 @@ padding-top: 6px;
 padding-bottom: 1%;
 hyphens: auto;
 }
+
 .btn2{
-border-radius: 20px;
-padding: 5px 20px;
-background-color: #000000;
-color: white;
-font-size: 20px;
+  @include partial.btn2
 }
 
 .quote2{
@@ -374,6 +359,7 @@ font-weight: 200;
 /*Kontaktformular*/
 
 .lad-os-tale{
+  margin-top: 10em;
 }
 
 .lad-os-tale h5{
@@ -421,7 +407,7 @@ font-size: 22px;
 /* Style send-knappen hover */
 input[type=submit]:hover {
 color: #FFFEFC;
-background-color: #FF8591;
+background-color: partial.$primary-color;
 }
 
 /* Kontaktformular container */
@@ -529,7 +515,7 @@ height: 100%;
 /*fonter og tekst*/
 
 .om-os-baggrund{
-background-color: #FDFAF1;
+background-color: partial.$secondary-color;
 }
 
 .om-os-grid p{
@@ -639,12 +625,12 @@ font-size: 20px;
 }
 
 /*Footer*/
-/*Footer*/
+
 .side-footer {
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
-background-color: #FF8591;
+background-color: partial.$footer-color;
 }
 
 .side-footer h6{
@@ -672,7 +658,7 @@ padding-top: 10%;
 @media only screen and (max-width: 2500px) {
   .menu {
     flex-direction: column;
-    background-color: #FF8591;
+    background-color: partial.$primary-color;
     align-items: center;
     opacity: 95%;
     position: absolute;
@@ -749,7 +735,7 @@ padding-top: 10%;
 
 
 
-/* Media query for smaller screens */
+/* Media query for mindre skærme */
 @media (max-width: 767px) {
 main{
 padding-top: 15%;
@@ -759,14 +745,13 @@ main li {
   flex-direction: column;
 }
 
-/* Reset styles for labels and plus signs */
 main label {
   flex: none;
 }
 
 main label::before { 
     content: '+';
-    margin-left: 0; /* Reset margin */
+    margin-left: 0;
     display: flex;
     justify-content: flex-start;
     float: right;
@@ -803,8 +788,8 @@ main ul{
   margin-top: 2em;
 }
 
-.vores-projekter{
-  
+.lad-os-tale{
+  margin-top: 1px;
 }
 
 
@@ -812,7 +797,7 @@ main ul{
 
 
 
-/*Quote*/
+/*Quote responsiv*/
 @media only screen and (max-width: 700px) {
   .quote {
       font-size: 13px;
@@ -907,7 +892,7 @@ margin-top: 2em;
 }
 
 
-/* Media queries for OM OS side */
+/* Media queries for MØD TEAMET - OM OS side */
 @media only screen and (max-width: 800px){
 .team-gallery{
     grid-template-columns: 1fr;
@@ -980,15 +965,13 @@ smaller screens */
 width: 100%;
 /* Rest is for pure display */
 text-align: center;
+flex-direction: column;
 }
 
+footer{
+  flex-direction: column
+}
 
 }
 
-
-/*Knapper*/
-
-.btn{
-@include partial.btn;
-}
 
