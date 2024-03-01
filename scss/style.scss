@@ -454,13 +454,13 @@ padding-bottom: 10%;
 .item:nth-child(2){
 grid-row: span 14;
 grid-column: span 5;
-height: 100%;
 align-self: center;
 padding-left: 20%;
 }
 .item:nth-child(2) img {
-height: 100%;
 object-fit: cover;
+height: 450;
+width: 300;
 }
 
 /*Projekt 3*/
@@ -481,7 +481,8 @@ grid-row: span 10;
 }
 
 .item:nth-child(4) img {
-height: 600px;
+height: 250px;
+width: 250px;
 object-fit: cover;
 }
 /*Projekt 5*/
@@ -629,19 +630,23 @@ font-size: 20px;
 .side-footer {
 display: flex;
 justify-content: space-around;
+align-content: space-evenly;
 flex-wrap: wrap;
 background-color: partial.$footer-color;
-}
 
 .side-footer h6{
-font-size: 30px;
-padding-bottom: 2%;
-padding-top: 2%;
+  font-size: 30px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  }
+  .side-footer p{
+  font-size: 24px;
+  font-weight: 300;
+  }
+
 }
-.side-footer p{
-font-size: 24px;
-font-weight: 300;
-}
+
+
 
 .logo-hvid{
 padding-top: 10%;
@@ -964,12 +969,13 @@ ensure that they content wraps on
 smaller screens */
 width: 100%;
 /* Rest is for pure display */
-text-align: center;
+
 flex-direction: column;
+text-align: center;
 }
 
 footer{
-  flex-direction: column
+  flex-direction: column;
 }
 
 }
