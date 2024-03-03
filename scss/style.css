@@ -310,21 +310,20 @@ main label {
   width: 100%;
   flex-direction: row;
   justify-content: center;
-  padding-right: 6%;
-  padding-bottom: 7%;
   padding-top: 2%;
+  padding-left: 2em;
 }
 .projekter-gallery .fullimg {
   height: 750px;
   width: 500px;
 }
 .projekter-gallery .smallimg {
-  height: 450px;
-  width: 450px;
+  height: 370px;
+  width: 350px;
 }
 
 .frame-left {
-  padding-right: 2%;
+  padding-right: 1em;
 }
 
 .frame-right {
@@ -332,6 +331,23 @@ main label {
   flex-direction: column;
   justify-content: space-around;
   width: 33.33%;
+  row-gap: 1em;
+}
+
+.btn3 {
+  background-color: black;
+  padding: 2px 2px;
+  display: block;
+  margin-top: 2em;
+  margin-left: 25%;
+  float: left;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 13%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 425px) {
@@ -343,6 +359,7 @@ main label {
 .team {
   padding-bottom: 10%;
   height: 100vh;
+  margin-top: 20em;
 }
 
 .team h4 {
@@ -735,12 +752,6 @@ input[type=submit]:hover {
     padding-right: 5%;
     padding-left: 5%;
   }
-  .frame-left,
-  .frame-right {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
   /* Media query for mindre skærme */
   /*Quote responsiv*/
   /*Om os side RESPONSIV*/
@@ -804,8 +815,21 @@ input[type=submit]:hover {
     margin-top: 1px;
   }
   .projekter-gallery {
-    flex-direction: column; /* Ændrer layout til en kolonne på mindre skærme */
     width: 100%;
+  }
+  .projekter-gallery .fullimg {
+    height: 250px;
+    width: 150px;
+  }
+  .projekter-gallery .smallimg {
+    height: 150px;
+    width: 150px;
+  }
+  .frame-left,
+  .frame-right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 1675px) and (max-width: 700px) {

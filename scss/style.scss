@@ -309,9 +309,8 @@ display: flex;
 width: 100%;
 flex-direction: row;
 justify-content: center;
-padding-right: 6%;
-padding-bottom: 7%;
 padding-top: 2%;
+padding-left: 2em;
 
 .fullimg{
   height: 750px;
@@ -320,19 +319,24 @@ padding-top: 2%;
 }
 
 .smallimg{
-  height: 450px;
-  width: 450px;
+  height: 370px;
+  width: 350px;
 }
 
 }
 .frame-left{
-padding-right: 2%;
+padding-right: 1em;
 }
 .frame-right{
 display: flex;
 flex-direction: column;
 justify-content: space-around;
 width: 33.33%;
+row-gap: 1em;
+}
+
+.btn3{
+  @include partial.btn
 }
 
 @media only screen and (max-width: 425px){
@@ -343,6 +347,7 @@ width: 33.33%;
 .team{
 padding-bottom: 10%;
 height: 100vh;
+margin-top: 20em;
 }
 .team h4{
 padding-top: 0;
@@ -735,12 +740,7 @@ background-color: partial.$footer-color;
   padding-right: 5%;
   padding-left: 5%;
 }
-.frame-left,
-.frame-right{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
+
 
 
 /* Media query for mindre skærme */
@@ -810,8 +810,26 @@ main ul{
 }
 
 .projekter-gallery{
-  flex-direction: column; /* Ændrer layout til en kolonne på mindre skærme */
   width: 100%;
+
+  .fullimg{
+    height: 250px;
+    width: 150px;
+  
+  }
+  
+  .smallimg{
+    height: 150px;
+    width: 150px;
+  }
+
+}
+
+.frame-left,
+.frame-right{
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 }
