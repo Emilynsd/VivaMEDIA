@@ -361,14 +361,17 @@ main label {
   padding-bottom: 10%;
   height: 100vh;
   margin-top: 20em;
+  background-color: #FF8591;
 }
 
 .team h4 {
-  padding-top: 0;
+  padding-top: 2em;
   padding-bottom: 1%;
+  background-color: #FF8591;
 }
 
 .team p {
+  font-size: 20px;
   padding-right: 54%;
   padding-top: 6px;
   padding-bottom: 1%;
@@ -382,15 +385,6 @@ main label {
   background-color: #000000;
   color: white;
   font-size: 20px;
-}
-
-.quote2 {
-  float: right;
-  padding-top: 10%;
-  width: 50%;
-  font-size: 40px;
-  font-style: italic;
-  font-weight: 200;
 }
 
 /*Kontaktformular*/
@@ -473,6 +467,23 @@ input[type=submit]:hover {
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
   margin-top: 10em;
+}
+
+.quote-om-os {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  width: 50vw;
+  margin-left: auto;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.quote-om-os p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 25px;
 }
 
 /*Elementerne internt*/
@@ -662,23 +673,6 @@ input[type=submit]:hover {
   font-size: 20px;
 }
 
-.quote-3 {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 2em;
-  width: 50vw;
-  margin-left: auto;
-  margin-bottom: 5em;
-  margin-top: 5em;
-}
-
-.quote-3 p {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 20px;
-}
-
 /*Footer*/
 .side-footer {
   display: flex;
@@ -745,14 +739,11 @@ input[type=submit]:hover {
     cursor: pointer;
   }
 }
-/*Media Queries for big screens*/
+/* mød vores team og skræddersy */
 @media only screen and (max-width: 1675px) {
   .team {
     width: 100%;
     padding: 0;
-  }
-  .quote2 {
-    display: none;
   }
   .team img {
     width: 100%;
@@ -773,7 +764,7 @@ input[type=submit]:hover {
     padding-right: 5%;
     padding-left: 5%;
   }
-  /* Media query for mindre skærme */
+  /* Media query for mindre skærme #generelt# */
   /*Quote responsiv*/
   /*Om os side RESPONSIV*/
   /* Media query for mindre skærme */
@@ -824,6 +815,9 @@ input[type=submit]:hover {
     width: 100%;
     height: 40vh;
   }
+  .btn3 {
+    width: 45%;
+  }
   .space-peak {
     margin-left: 10px;
   }
@@ -852,23 +846,14 @@ input[type=submit]:hover {
     padding: 0;
     margin: 0;
   }
+  .vores-projekter-h2 {
+    padding-bottom: 2em;
+    padding-left: 4px;
+  }
 }
 @media only screen and (max-width: 1675px) and (max-width: 700px) {
-  .quote {
-    font-size: 13px;
-  }
   ul {
     padding-left: 3em;
-  }
-  .quote-box {
-    padding-left: 4em;
-    width: 42vh;
-    height: 20vw;
-    padding-top: 30em;
-    margin-bottom: 20em;
-  }
-  .quote {
-    font-size: 40px;
   }
   .stjerneskud {
     right: -10%;
