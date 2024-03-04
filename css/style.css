@@ -311,9 +311,9 @@ main label {
 
 
 
-/*Sektion ''Vores projekter''*/
+/*Sektion ''Vores projekter'' på forsiden */
 
-.row{
+.projekter-gallery{
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -334,6 +334,8 @@ main label {
 
 @media only screen and (max-width: 425px){
   .outer{flex-direction:column!important;}}
+
+
 
 /*Sektion ''Laer vores stjerneteam at kende''*/
 
@@ -702,7 +704,7 @@ font-size: 20px;
     
   }
 
-/*Media Queries for big screens*/
+/*Media Queries for QUOTE -- LAER VORES TEAM (FORSIDE) -- og VORES PROJEKTER (FORSIDE)  */
 @media only screen and (max-width:1675px) {
   .team{
     width: 100%;
@@ -731,8 +733,8 @@ font-size: 20px;
     padding-right: 5%;
     padding-left: 5%;
   }
-  .row {
-    flex-direction: column; /* Ændrer layout til en kolonne på mindre skærme */
+  .projekter-gallery {
+    flex-direction: column; 
     width: 100%;
   }
   .frame-left,
@@ -744,7 +746,7 @@ font-size: 20px;
   
 
 
-/* Media query for smaller screens */
+/* Media query for EXPAND */
 @media (max-width: 767px) {
 main{
   padding-top: 15%;
@@ -754,14 +756,14 @@ main{
     flex-direction: column;
   }
 
-  /* Reset styles for labels and plus signs */
+
  main label {
     flex: none;
   }
 
  main label::before { 
       content: '+';
-      margin-left: 0; /* Reset margin */
+      margin-left: 0; 
       display: flex;
       justify-content: flex-start;
       float: right;
@@ -877,9 +879,8 @@ margin-left: 1em;
 
 }
 
-/*Om os side RESPONSIV*/
 
-/* Media query for mindre skærme */
+/* Media query for OM OS GRID */
 @media (max-width: 767px) {
   .om-os-grid li {
     flex-direction: column;
@@ -896,8 +897,6 @@ margin-left: 1em;
   }
 }
 
-
-/* Media queries for OM OS side */
 @media only screen and (max-width: 800px){
   .team-gallery{
       grid-template-columns: 1fr;
@@ -927,15 +926,15 @@ position: static;
 }
 
 /*PROJEKT GALLERI RESPONSIV*/
-/* Små skærme */
+
 @media only screen and (max-width: 600px) {
   .gallery {
-    grid-template-columns: repeat(1, 1fr); /* Ændrer til én kolonne på små skærme */
+    grid-template-columns: repeat(1, 1fr); 
     gap: 40px;
   }
 
   .item.large {
-    grid-column: span 1; /* Spænder over én kolonne */
+    grid-column: span 1;
     padding-top: 5%;
     padding-bottom: 8%;
   }
@@ -948,29 +947,25 @@ position: static;
   .item:nth-child(2),
   .item:nth-child(3),
   .item:nth-child(4) {
-    grid-column: span 1; /* Spænder over én kolonne */
-    grid-row: auto; /* Fjerner tidligere grid-row spans */
-    margin-left: 0; /* Fjerner venstre margin */
-    margin-right: 0; /* Fjerner højre margin */
+    grid-column: span 1; 
+    grid-row: auto; 
+    margin-left: 0; 
+    margin-right: 0;
   }
 
   .item.stacked:nth-child(5),
   .item.stacked:nth-child(6) {
-    grid-column: span 1; /* Spænder over én kolonne */
-    margin-top: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
-    margin-bottom: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
+    grid-column: span 1;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
   }
 }
+
+
 /*Footer*/
 .side-footer>* {
 	flex: 0 0 33.333%;
-	/* Setting a minimum size will 
-	ensure that they content wraps on
-	smaller screens */
 	width: 100%;
-	/* Rest is for pure display */
 	text-align: center;
 }
-
-
 }
