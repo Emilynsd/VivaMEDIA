@@ -311,7 +311,7 @@ main label {
   width: 100%;
   flex-direction: row;
   justify-content: center;
-  padding-top: 2;
+  padding-top: 1%;
   padding-left: 2em;
 }
 .projekter-gallery .fullimg {
@@ -358,7 +358,7 @@ main label {
 }
 /*Sektion ''Laer vores stjerneteam at kende''*/
 .team {
-  padding-bottom: 10%;
+  padding-bottom: 2%;
   height: 100vh;
   margin-top: 20em;
   background-color: #FF8591;
@@ -389,7 +389,7 @@ main label {
 
 /*Kontaktformular*/
 .lad-os-tale {
-  margin-top: 30em;
+  margin-top: 3em;
 }
 
 .lad-os-tale h5 {
@@ -675,23 +675,19 @@ input[type=submit]:hover {
 
 /*Footer*/
 .side-footer {
+  padding-top: 1%;
   display: flex;
   justify-content: space-around;
-  align-content: space-evenly;
+  align-content: center;
   flex-wrap: wrap;
   background-color: #FF8591;
 }
-.side-footer article {
-  padding-top: 4em;
-}
-
 .side-footer h6 {
   font-size: 20px;
   padding-bottom: 2%;
   padding-top: 2%;
   text-align: center;
 }
-
 .side-footer p {
   font-size: 15px;
   font-weight: 300;
@@ -701,6 +697,7 @@ input[type=submit]:hover {
   display: flex;
   padding-top: 20%;
   max-width: 100%;
+  justify-content: center;
 }
 
 /*************** Responsive indstillinger *****************/
@@ -762,6 +759,10 @@ input[type=submit]:hover {
     padding-bottom: 2%;
     padding-right: 5%;
     padding-left: 5%;
+  }
+  .lad-os-tale {
+    padding-top: 8%;
+    width: 100%;
   }
   /* Media query for mindre skærme #generelt# */
   /*Quote responsiv*/
@@ -826,18 +827,21 @@ input[type=submit]:hover {
     margin-top: 2em;
   }
   .lad-os-tale {
-    margin-top: 1px;
+    margin-top: 10%;
+    width: 100%;
   }
   .projekter-gallery {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   .projekter-gallery .fullimg {
-    height: 250px;
-    width: 150px;
+    height: auto;
+    width: 100%;
   }
   .projekter-gallery .smallimg {
-    height: 150px;
-    width: 150px;
+    height: auto;
+    width: 100%;
   }
   .frame-left,
   .frame-right {
