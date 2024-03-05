@@ -700,8 +700,7 @@ input[type=submit]:hover {
 .logo-hvid {
   display: flex;
   padding-top: 20%;
-  max-width: 70%;
-  padding-left: 25%;
+  max-width: 100%;
 }
 
 /*************** Responsive indstillinger *****************/
