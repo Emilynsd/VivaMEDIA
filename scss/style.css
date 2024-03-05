@@ -262,7 +262,6 @@ main label {
   padding-top: 3%;
   background-color: #FDFAF1;
 }
-
 .pakke p {
   font-weight: lighter;
   line-height: 2;
@@ -675,12 +674,16 @@ input[type=submit]:hover {
 
 /*Footer*/
 .side-footer {
-  padding-top: 1%;
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
   background-color: #FF8591;
+}
+.side-footer article {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .side-footer h6 {
   font-size: 20px;

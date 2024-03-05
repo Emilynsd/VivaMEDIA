@@ -258,16 +258,19 @@ color: partial.$primary-color;
 padding-bottom: 6%;
 padding-top: 3%;
 background-color: partial.$secondary-color;
+
+  p{font-weight: lighter;
+    line-height: 2;
+    font-size: 18px;
+    padding-left: 25em;
+    padding-right: 25em;
+    text-align: left;
+    padding-top: 2em;
 }
-.pakke p{
-font-weight: lighter;
-line-height: 2;
-font-size: 18px;
-padding-left: 25em;
-padding-right: 25em;
-text-align: left;
-padding-top: 2em;
+
 }
+
+
 
 /*Quote i stjernehimmel*/
 .space-peak {
@@ -663,13 +666,18 @@ font-size: 20px;
 /*Footer*/
 
 .side-footer {
- 
-padding-top: 1%;
-display:flex;
+display: flex;
 justify-content: space-around;
 align-content: center;
 flex-wrap: wrap;
 background-color: partial.$footer-color;
+
+article{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 
 h6{ 
   font-size: 20px;
@@ -688,6 +696,7 @@ p{
   padding-top: 20%;
   max-width: 100%;
   justify-content: center;
+  
 }
 
 
