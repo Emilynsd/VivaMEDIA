@@ -459,7 +459,7 @@ input[type=submit]:hover {
   padding-top: 1em;
 }
 
-/***** Vores projekter galleri side*/
+/***** Vores projekter side*/
 .vores-projekter-h2 {
   padding-bottom: 8em;
 }
@@ -482,6 +482,7 @@ input[type=submit]:hover {
   justify-content: flex-end;
   padding-right: 2em;
   width: 50vw;
+  height: 50vh;
   margin-left: auto;
   margin-bottom: 5em;
   margin-top: 5em;
@@ -505,6 +506,12 @@ input[type=submit]:hover {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.lang-animation {
+  width: 90vw;
+  height: 90vh;
+  margin-left: 2.5em;
 }
 
 /*Projekt 1*/
@@ -779,6 +786,7 @@ input[type=submit]:hover {
   }
 }
 /* Media query for mindre skærme #generelt# */
+/* Sektion ''Forside animation'' */
 @media (max-width: 767px) {
   main {
     padding-top: 15%;
@@ -798,9 +806,14 @@ input[type=submit]:hover {
     padding-right: 1em;
   }
   .stor-animation {
-    width: 390px;
-    height: 50vh;
-    padding-left: 10px;
+    height: 40vh;
+    width: 100%;
+    margin-left: 0.5em;
+  }
+  .stor-animation .stor-animation-video {
+    height: 26vh;
+    width: 100%;
+    margin-left: 0em;
   }
   h1 {
     font-size: 24px;
@@ -903,7 +916,6 @@ input[type=submit]:hover {
   }
 }
 /*Om os side RESPONSIV*/
-/* Media query for mindre skærme */
 @media (max-width: 767px) {
   .om-os-grid p {
     padding-left: 0.5em;
@@ -923,6 +935,10 @@ input[type=submit]:hover {
     float: left;
     padding-right: 1em;
     font-weight: bold;
+  }
+  .quote-om-os {
+    width: 27vw;
+    height: 20vh;
   }
 }
 /* Media queries for MØD TEAMET - OM OS side */
@@ -952,35 +968,40 @@ input[type=submit]:hover {
 /* Små skærme */
 @media only screen and (max-width: 600px) {
   .gallery {
-    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
     text-align: center;
     align-items: center;
+    grid-template-columns: 1fr;
   }
-  .item.large {
+  .lang-animation {
+    width: 87vw;
+    height: 24vh;
+    margin-left: 0em;
+    /*Footer*/
+  }
+  .lang-animation .item.large {
     grid-column: span 1;
     padding-top: 5%;
     padding-bottom: 8%;
   }
-  .item:nth-child(2) {
+  .lang-animation .item:nth-child(2) {
     margin: 0;
     padding: 0;
   }
-  .item:nth-child(2),
-  .item:nth-child(3),
-  .item:nth-child(4) {
+  .lang-animation .item:nth-child(2),
+  .lang-animation .item:nth-child(3),
+  .lang-animation .item:nth-child(4) {
     grid-column: span 1; /* Spænder over én kolonne */
     grid-row: auto; /* Fjerner tidligere grid-row spans */
     margin-right: 0; /* Fjerner højre margin */
   }
-  .item.stacked:nth-child(5),
-  .item.stacked:nth-child(6) {
+  .lang-animation .item.stacked:nth-child(5),
+  .lang-animation .item.stacked:nth-child(6) {
     grid-column: span 1; /* Spænder over én kolonne */
     margin-top: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
     margin-bottom: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
   }
-  /*Footer*/
-  .side-footer > * {
+  .lang-animation .side-footer > * {
     flex: 0 0 33.333%;
     /* Setting a minimum size will 
     ensure that they content wraps on
@@ -990,10 +1011,10 @@ input[type=submit]:hover {
     flex-direction: column;
     text-align: center;
   }
-  footer {
+  .lang-animation footer {
     flex-direction: column;
   }
-  .logo-hvid {
+  .lang-animation .logo-hvid {
     max-width: 100%;
     padding-left: 0%;
   }
