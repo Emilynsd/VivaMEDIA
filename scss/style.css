@@ -311,7 +311,7 @@ main label {
   flex-direction: row;
   justify-content: center;
   padding-top: 1em;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .projekter-gallery .fullimg {
   height: 750px;
@@ -834,8 +834,9 @@ input[type=submit]:hover {
     width: 100%;
   }
   .projekter-gallery .fullimg {
-    height: 333px;
+    height: 350px;
     width: 100%;
+    padding-top: 5px;
   }
   .projekter-gallery .smallimg {
     height: auto;
