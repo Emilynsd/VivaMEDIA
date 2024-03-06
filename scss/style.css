@@ -378,8 +378,20 @@ main label {
   padding: 0;
 }
 
-.quote {
-  float: inline-end;
+.quote1 {
+  float: right;
+  font-size: 400px;
+  padding-top: 10%;
+  padding-right: 5%;
+  -webkit-hyphens: none;
+          hyphens: none;
+}
+
+.quoteblock {
+  font-size: 28px;
+  padding-top: 50%;
+  -webkit-hyphens: none;
+          hyphens: none;
 }
 
 .btn2 {
@@ -691,13 +703,13 @@ input[type=submit]:hover {
   flex-direction: column;
 }
 .side-footer h6 {
-  font-size: 20px;
+  font-size: 28px;
   padding-bottom: 2%;
   padding-top: 2%;
   text-align: center;
 }
 .side-footer p {
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 300;
 }
 

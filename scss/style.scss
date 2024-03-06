@@ -374,8 +374,17 @@ margin-top: 20em;
  }
 }
 
-.quote{
-  float: inline-end;
+.quote1{
+  float: right;
+  font-size: 400px;
+  padding-top: 10%;
+  padding-right: 5%;
+  hyphens: none;
+}
+.quoteblock{
+  font-size: 28px;
+  padding-top: 50%;
+  hyphens: none;
 }
 
 .btn2{
@@ -688,14 +697,14 @@ article{
 
 
 h6{ 
-  font-size: 20px;
+  font-size: 28px;
   padding-bottom: 2%;
   padding-top: 2%;
   text-align: center;
 }
 
 p{
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 300;
   }
 }
