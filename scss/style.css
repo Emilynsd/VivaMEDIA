@@ -358,18 +358,14 @@ main label {
 }
 /*Sektion ''Laer vores stjerneteam at kende''*/
 .team {
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   height: 100vh;
   margin-top: 20em;
-  background-color: #FF8591;
 }
-
 .team h4 {
   padding-top: 2em;
-  padding-bottom: 1%;
-  background-color: #FF8591;
+  padding-bottom: 1px;
 }
-
 .team p {
   font-size: 20px;
   padding-right: 54%;
@@ -377,6 +373,13 @@ main label {
   padding-bottom: 1%;
   -webkit-hyphens: auto;
           hyphens: auto;
+}
+.team img {
+  padding: 0;
+}
+
+.quote {
+  float: inline-end;
 }
 
 .btn2 {
@@ -747,7 +750,7 @@ input[type=submit]:hover {
     padding: 0;
   }
   .team img {
-    width: 100%;
+    width: 70%;
   }
   .team p {
     width: 100%;

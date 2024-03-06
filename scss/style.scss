@@ -354,30 +354,36 @@ row-gap: 1em;
 /*Sektion ''Laer vores stjerneteam at kende''*/
 
 .team{
-padding-bottom: 2%;
+padding-bottom: 1%;
 height: 100vh;
 margin-top: 20em;
-background-color: #FF8591;
-}
 
-.team h4{
-padding-top: 2em;
-padding-bottom: 1%;
-background-color: #FF8591;
-}
-
-.team p{
+ h4{
+  padding-top: 2em;
+  padding-bottom: 1px;
+ }
+ p{
   font-size: 20px;
-padding-right: 54%;
-padding-top: 6px;
-padding-bottom: 1%;
-hyphens: auto;
+  padding-right: 54%;
+  padding-top: 6px;
+  padding-bottom: 1%;
+  hyphens: auto;  
+ }
+ img{
+  padding: 0;
+ }
+}
 
+.quote{
+  float: inline-end;
 }
 
 .btn2{
   @include partial.btn2
 }
+
+
+
 
 /*Kontaktformular*/
 
@@ -751,7 +757,7 @@ p{
 }
 
 .team img{
-  width: 100%;
+  width: 70%;
 }
 .team p{
   width: 100%;
