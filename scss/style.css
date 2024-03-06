@@ -320,6 +320,7 @@ main label {
 .projekter-gallery .smallimg {
   height: 370px;
   width: 350px;
+  row-gap: 0%;
 }
 
 .frame-left {
@@ -768,15 +769,9 @@ input[type=submit]:hover {
     padding-top: 8%;
     width: 100%;
   }
-  /* Media query for mindre skærme #generelt# */
-  /*Quote responsiv*/
-  /*Om os side RESPONSIV*/
-  /* Media query for mindre skærme */
-  /* Media queries for MØD TEAMET - OM OS side */
-  /*PROJEKT GALLERI RESPONSIV*/
-  /* Små skærme */
 }
-@media only screen and (max-width: 1675px) and (max-width: 767px) {
+/* Media query for mindre skærme #generelt# */
+@media (max-width: 767px) {
   main {
     padding-top: 15%;
   }
@@ -836,11 +831,10 @@ input[type=submit]:hover {
   }
   .projekter-gallery {
     display: flex;
-    flex-direction: column;
     width: 100%;
   }
   .projekter-gallery .fullimg {
-    height: auto;
+    height: 333px;
     width: 100%;
   }
   .projekter-gallery .smallimg {
@@ -852,13 +846,16 @@ input[type=submit]:hover {
     width: 100%;
     padding: 0;
     margin: 0;
+    row-gap: 0em;
+    justify-content: center;
   }
   .vores-projekter-h2 {
     padding-bottom: 2em;
     padding-left: 4px;
   }
 }
-@media only screen and (max-width: 1675px) and (max-width: 700px) {
+/*Quote responsiv*/
+@media only screen and (max-width: 700px) {
   ul {
     padding-left: 3em;
   }
@@ -896,7 +893,9 @@ input[type=submit]:hover {
     margin-top: 2em;
   }
 }
-@media only screen and (max-width: 1675px) and (max-width: 767px) {
+/*Om os side RESPONSIV*/
+/* Media query for mindre skærme */
+@media (max-width: 767px) {
   .om-os-grid p {
     padding-left: 0.5em;
   }
@@ -917,7 +916,8 @@ input[type=submit]:hover {
     font-weight: bold;
   }
 }
-@media only screen and (max-width: 1675px) and (max-width: 800px) {
+/* Media queries for MØD TEAMET - OM OS side */
+@media only screen and (max-width: 800px) {
   .team-gallery {
     grid-template-columns: 1fr;
     margin-left: 0%;
@@ -939,7 +939,9 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 1675px) and (max-width: 600px) {
+/*PROJEKT GALLERI RESPONSIV*/
+/* Små skærme */
+@media only screen and (max-width: 600px) {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;

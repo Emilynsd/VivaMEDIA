@@ -328,6 +328,7 @@ padding-left: 2em;
 .smallimg{
   height: 370px;
   width: 350px;
+  row-gap: 0%;
 }
 
 }
@@ -776,7 +777,7 @@ p{
 }
 
 
-
+}
 /* Media query for mindre skærme #generelt# */
 @media (max-width: 767px) {
 main{
@@ -850,11 +851,10 @@ main ul{
 
 .projekter-gallery{
   display: flex;
-  flex-direction: column;
   width: 100%;
 
   .fullimg{
-    height: auto;
+    height: 333px;
     width: 100%;
   
   }
@@ -871,6 +871,8 @@ main ul{
   width: 100%;
   padding: 0;
   margin: 0;
+  row-gap: 0em;
+  justify-content: center ;
 }
 
 .vores-projekter-h2{
@@ -1056,5 +1058,5 @@ footer{
 }
 
 }
-}
+
 
