@@ -353,38 +353,57 @@ row-gap: 1em;
 
 /*Sektion ''Laer vores stjerneteam at kende''*/
 
-.team{
-padding-bottom: 1%;
-height: 100vh;
-margin-top: 20em;
+.team {
+  padding-bottom: 1%;
+  height: 100vh;
+  margin-top: 20em;
+}
 
- h4{
+.team h4 {
   padding-top: 2em;
   padding-bottom: 1px;
- }
- p{
+}
+
+.team p {
   font-size: 20px;
   padding-right: 54%;
   padding-top: 6px;
   padding-bottom: 1%;
-  hyphens: auto;  
- }
- img{
-  padding: 0;
- }
+  hyphens: auto;
 }
 
-.quote1{
+.team img {
+  padding: 0;
+}
+
+.quote1 {
   float: right;
   font-size: 400px;
   padding-top: 10%;
   padding-right: 5%;
   hyphens: none;
 }
-.quoteblock{
-  font-size: 28px;
+
+.quoteblock p {
+  font-size: 30px;
   padding-top: 50%;
   hyphens: none;
+}
+
+/* Til mindre skærme */
+@media only screen and (max-width: 768px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote1 {
+    float: none;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 0;
+    padding-left: 10px;
+  }
 }
 
 .btn2{

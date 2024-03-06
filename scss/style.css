@@ -362,10 +362,12 @@ main label {
   height: 100vh;
   margin-top: 20em;
 }
+
 .team h4 {
   padding-top: 2em;
   padding-bottom: 1px;
 }
+
 .team p {
   font-size: 20px;
   padding-right: 54%;
@@ -374,6 +376,7 @@ main label {
   -webkit-hyphens: auto;
           hyphens: auto;
 }
+
 .team img {
   padding: 0;
 }
@@ -387,13 +390,27 @@ main label {
           hyphens: none;
 }
 
-.quoteblock {
-  font-size: 28px;
+.quoteblock p {
+  font-size: 30px;
   padding-top: 50%;
   -webkit-hyphens: none;
           hyphens: none;
 }
 
+/* Til mindre skærme */
+@media only screen and (max-width: 768px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .quote1 {
+    float: none;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}
 .btn2 {
   border-radius: 20px;
   padding: 5px 20px;
