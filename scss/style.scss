@@ -258,16 +258,19 @@ color: partial.$primary-color;
 padding-bottom: 6%;
 padding-top: 3%;
 background-color: partial.$secondary-color;
+
+  p{font-weight: lighter;
+    line-height: 2;
+    font-size: 18px;
+    padding-left: 25em;
+    padding-right: 25em;
+    text-align: left;
+    padding-top: 2em;
 }
-.pakke p{
-font-weight: lighter;
-line-height: 2;
-font-size: 18px;
-padding-left: 25em;
-padding-right: 25em;
-text-align: left;
-padding-top: 2em;
+
 }
+
+
 
 /*Quote i stjernehimmel*/
 .space-peak {
@@ -313,7 +316,7 @@ display: flex;
 width: 100%;
 flex-direction: row;
 justify-content: center;
-padding-top: 2;
+padding-top: 1em;
 padding-left: 2em;
 
 .fullimg{
@@ -350,7 +353,7 @@ row-gap: 1em;
 /*Sektion ''Laer vores stjerneteam at kende''*/
 
 .team{
-padding-bottom: 10%;
+padding-bottom: 2%;
 height: 100vh;
 margin-top: 20em;
 background-color: #FF8591;
@@ -378,7 +381,7 @@ hyphens: auto;
 /*Kontaktformular*/
 
 .lad-os-tale{
-  margin-top: 30em;
+  margin-top: 3em;
 }
 
 .lad-os-tale h5{
@@ -665,31 +668,35 @@ font-size: 20px;
 .side-footer {
 display: flex;
 justify-content: space-around;
-align-content: space-evenly;
+align-content: center;
 flex-wrap: wrap;
 background-color: partial.$footer-color;
 
 article{
-  padding-top: 4em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-}
 
-.side-footer h6{
+h6{ 
   font-size: 20px;
   padding-bottom: 2%;
   padding-top: 2%;
   text-align: center;
-  }
-  .side-footer p{
+}
+
+p{
   font-size: 15px;
   font-weight: 300;
   }
-
+}
 .logo-hvid{
   display: flex;
   padding-top: 20%;
   max-width: 100%;
+  justify-content: center;
+  
 }
 
 
@@ -732,7 +739,6 @@ article{
     font-size: 28px;
     cursor: pointer;
   }
-  
 }
 
 /* mød vores team og skræddersy */
@@ -761,6 +767,11 @@ article{
   padding-bottom: 2%;
   padding-right: 5%;
   padding-left: 5%;
+
+}
+.lad-os-tale{
+  padding-top: 8%;
+  width: 100%;
 }
 
 
@@ -832,21 +843,24 @@ main ul{
 }
 
 .lad-os-tale{
-  margin-top: 1px;
+  margin-top: 10%;
+  width: 100%;
 }
 
 .projekter-gallery{
+  display: flex;
+  flex-direction: column;
   width: 100%;
 
   .fullimg{
-    height: 250px;
-    width: 150px;
+    height: auto;
+    width: 100%;
   
   }
   
   .smallimg{
-    height: 150px;
-    width: 150px;
+    height: auto;
+    width: 100%;
   }
 
 }
