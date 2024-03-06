@@ -146,19 +146,29 @@ padding-top: 5%;
 
 /*Sektion ''Forside animaton''*/
 
-.stor-animation{
+.stor-animation {
   display: flex;
-  width: 98vw;
+  width: 90vw; 
   height: 90vh;
   align-items: center;
   justify-content: center;
-  padding-left: 2.5em;
+}
+
+.stor-animation-video{
+  display: flex;
+  width: 98vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+margin-left: 8.8em;
 }
 
 .stor-animation h1{
 padding-top: 8em;
 padding-bottom: 8em;
 }
+
+
 
 /*Sektion ''Vi tilbyder''*/
 .vitilbyder{

@@ -14,3 +14,27 @@ document.getElementById('space-peak').addEventListener('click', function() {
     image.style.display = 'block';
   }
 });
+
+var customVideo = document.getElementById('customVideo');
+var playPauseButton = document.getElementById('playPauseButton');
+var muteUnmuteButton = document.getElementById('muteUnmuteButton');
+
+playPauseButton.addEventListener('click', function () {
+  if (customVideo.paused) {
+    customVideo.play();
+    playPauseButton.textContent = 'Pause';
+  } else {
+    customVideo.pause();
+    playPauseButton.textContent = 'Play';
+  }
+});
+
+muteUnmuteButton.addEventListener('click', function () {
+  if (customVideo.muted) {
+    customVideo.muted = false;
+    muteUnmuteButton.textContent = 'Mute';
+  } else {
+    customVideo.muted = true;
+    muteUnmuteButton.textContent = 'Unmute';
+  }
+});
