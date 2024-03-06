@@ -645,6 +645,7 @@ input[type=submit]:hover {
   gap: 20px;
   row-gap: 100px;
   margin-left: 2em;
+  margin-bottom: 3em;
 }
 
 .team-member {
@@ -919,7 +920,8 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1675px) and (max-width: 800px) {
   .team-gallery {
     grid-template-columns: 1fr;
-    padding-left: 2em;
+    margin-left: 0%;
+    padding-left: 1em;
   }
   .team-gallery {
     grid-template-columns: 99%;
