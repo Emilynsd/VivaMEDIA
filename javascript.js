@@ -14,5 +14,30 @@ document.getElementById('space-peak').addEventListener('click', function() {
     image.style.display = 'block';
   }
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.querySelector('.stor-animation-img');
+  const video = document.querySelector('.stor-animation video');
+
+  image.addEventListener('mouseover', function() {
+    image.style.display = 'none';
+    video.style.display = 'block';
+    video.play(); // Start videoen
+  });
+
+  image.addEventListener('click', function(event) {
+    event.stopPropagation(); // Stopper klikbegivenheden fra at nå containeren og stoppe videoen
+    image.style.display = 'none';
+    video.style.display = 'block';
+    video.play(); // Start videoen
+  });
+
+  document.addEventListener('mouseover', function(event) {
+    if (!event.target.matches('.stor-animation, .stor-animation *')) {
+      image.style.display = 'block';
+      video.style.display = 'none';
+      video.pause(); // Stop videoen
+    }
+  });
+});
 
 
