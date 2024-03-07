@@ -150,20 +150,17 @@ padding-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  max-width: 100vw; /* Begrænser bredden til skærmens bredde */
-  max-height: 100vh; /* Begrænser højden til skærmens højde */
-  overflow: hidden; /* Skjuler eventuelt indhold, der er større end skærmen */
-  margin-top: 10%;
+  max-width: 80%; /* Begrænser bredden til 80% af skærmens bredde */
+  max-height: 80vh; /* Begrænser højden til 80% af skærmens højde */
+  margin-top: 60%;
 }
 
 .stor-animation-img,
 .stor-animation video {
-  max-width: 80%;
+  max-width: 100%;
   max-height: 100%;
   display: block;
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centrerer elementet */
 }
@@ -173,9 +170,17 @@ padding-top: 5%;
 }
 
 .stor-animation:hover .stor-animation-img {
-  filter: grayscale(100%) brightness(50%);
-  cursor: pointer;
+  display: none;
 }
+
+.stor-animation-img {
+  cursor: pointer; /* Tilføjer en pegefinger-cursor */
+}
+
+.stor-animation:hover video {
+  display: block;
+}
+
 
 .stor-animation h1{
 padding-top: 8em;
@@ -380,7 +385,7 @@ row-gap: 1em;
 /*Sektion ''Laer vores stjerneteam at kende''*/
 
 .team{
-padding-top: 10%;
+padding-top: 15%;
   img{
     padding: 0;
   }
@@ -390,16 +395,16 @@ padding-top: 10%;
   p{
     padding-bottom: 1%;
   }
-}
-.quote1{
-  float: right;
-  padding-right: 10%;
-
-  p{
-    font-size: 38px;
-    font-style: italic;
+  img{
+    width: ;
   }
 }
+
+
+.spacepeak2{
+  padding-left: 10%;
+}
+
 
 .btn2{
   @include partial.btn2
@@ -417,12 +422,12 @@ padding-top: 10%;
 .lad-os-tale h5{
 text-align: center;
 font-weight: 700;
+padding-bottom: 1%;
 }
 .lad-os-tale p{
 text-align: left;
 padding-left: 25%;
 padding-right: 25%;
-padding-top: 1%;
 font-weight: 200;
 hyphens: auto;
 }
@@ -469,7 +474,6 @@ justify-content: center;
 width: 75%;
 padding-left: 25%;
 padding-bottom: 8%;
-padding-top: 1em;
 }
 
 
@@ -530,72 +534,81 @@ display: block;
 }
 
 /*Projekt 1*/
+/*Projekt 1*/
 .item.large {
-grid-column: span 12;
-padding-top: 3%;
-padding-bottom: 10%;
+  grid-column: span 12;
+  padding-top: 3%;
+  padding-bottom: 10%;
 }
+
 /*Projekt 2*/
-.item:nth-child(2){
-grid-row: span 14;
-grid-column: span 5;
-align-self: center;
-padding-left: 20%;
+.item:nth-child(2) {
+  grid-row: span 14;
+  grid-column: span 5;
+  align-self: center;
+  padding-left: 20%;
 }
+
 .item:nth-child(2) img {
-object-fit: cover;
-height: 450;
-width: 300;
+  object-fit: cover;
+  height: 450px; /* Set the height explicitly */
+  width: 300px; /* Set the width explicitly */
 }
 
 /*Projekt 3*/
-.item:nth-child(3){
-grid-row: span 4;
-}
 .item:nth-child(3),
-.item:nth-child(4){
-grid-column: span 6; /* Sætter antallet af kolonner til at være 6 */
-height: 100%;
-align-self: center; /* Centrerer lodret */
+.item:nth-child(4) {
+  grid-column: span 6; /* Sætter antallet af kolonner til at være 6 */
+  height: 100%;
+  align-self: center; /* Centrerer lodret */
 }
 
 /*Projekt 4*/
-.item:nth-child(4) {
-grid-row: span 10;
+.item:nth-child(4) img {
+  height: 360px;
+  width: 360px;
+  object-fit: cover;
 }
 
-.item:nth-child(4) img {
-height: 360px;
-width: 360px;
-object-fit: cover;
-}
 /*Projekt 5*/
 .item.stacked:nth-child(5) {
-grid-column: auto / span 12; /* Spænder over alle 12 kolonner */
-height: 700px;
-justify-self: center;
-margin-top: 10%;
-margin-bottom: 7em;
-padding-bottom: 5em;
+  grid-column: auto / span 12; /* Spænder over alle 12 kolonner */
+  height: 700px;
+  justify-self: center;
+  margin-top: 10%;
+  margin-bottom: 7em;
+  padding-bottom: 5em;
 }
 
-.item.stacked:nth-child(5) img{
-height: 100%;
-object-fit: cover;
+.item.stacked:nth-child(5) img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /*Projekt 6*/
-.item.stacked:nth-child(6){
-grid-column: auto/ span 12;
-height: 600px;
-justify-self: center;
-margin-top: 10%;
-margin-bottom: 10%;
+.item.stacked:nth-child(6) {
+  grid-column: auto / span 12;
+  height: 600px;
+  justify-self: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-.item.stacked:nth-child(6) img{
-object-fit: cover;
-height: 100%;
+
+.item.stacked:nth-child(6) img {
+  object-fit: cover;
+  height: 100%;
 }
+
+/* Stacking Banners */
+.item:nth-child(2),
+.item:nth-child(3),
+.item:nth-child(4) {
+  grid-row: auto; 
+  grid-column: span 12; 
+  margin-bottom: 20px; 
+
+}
+
 
 
 
@@ -785,7 +798,7 @@ p{
 @media only screen and (max-width:1675px) {
 .team{
   width: 100%;
-  padding: 0;
+  padding-top: 15%;
 }
 
 .team img{
@@ -889,9 +902,17 @@ main ul{
   margin-top: 2em;
 }
 
+
+
 .lad-os-tale{
   margin-top: 10%;
   width: 100%;
+
+  p{
+    padding: 0;
+  }
+
+
 }
 
 .projekter-gallery{
@@ -1049,43 +1070,30 @@ position: static;
 /*PROJEKT GALLERI RESPONSIV*/
 /* Små skærme */
 @media only screen and (max-width: 600px) {
-.gallery {
-  gap: 40px;
-  text-align: center;
-  align-items: center;
-  grid-template-columns: 1fr;
-}
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .lang-animation {
+    width: 87vw;
+    height: 24vh;
+    margin-left: 0;
+  }
 
-.lang-animation {
-  width: 87vw;
-  height: 24vh;
-  margin-left: 0em;
+  .item.large {
+    grid-column: span 12; 
+    padding-top: 5%;
+    padding-bottom: 8%;
+  }
 
-.item.large {
-  grid-column: span 1; 
-  padding-top: 5%;
-  padding-bottom: 8%;
-}
-
-.item:nth-child(2){
-  margin: 0;
-  padding: 0;
-}
-
-.item:nth-child(2),
-.item:nth-child(3),
-.item:nth-child(4) {
-  grid-column: span 1; /* Spænder over én kolonne */
-  grid-row: auto; /* Fjerner tidligere grid-row spans */
-  margin-right: 0; /* Fjerner højre margin */
-}
-
-.item.stacked:nth-child(5),
-.item.stacked:nth-child(6) {
-  grid-column: span 1; /* Spænder over én kolonne */
-  margin-top: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
-  margin-bottom: 20px; /* Tilføjer mellemrum mellem billede 5/6 og de andre */
+  /* Stacking Banners */
+  .item:nth-child(n+2) {
+    grid-row: auto; 
+    grid-column: span 12; 
+    margin-bottom: 20px; 
+  }
 }
 
 
@@ -1111,6 +1119,4 @@ footer{
   padding-left: 0%;
 }
 
-}
 
-}

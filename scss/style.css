@@ -140,19 +140,37 @@ main {
 /*Sektion ''Forside animaton''*/
 .stor-animation {
   display: flex;
-  width: 90vw;
-  height: 90vh;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  max-width: 80%; /* Begrænser bredden til 80% af skærmens bredde */
+  max-height: 80vh; /* Begrænser højden til 80% af skærmens højde */
+  margin-top: 60%;
 }
 
-.stor-animation-video {
-  display: flex;
-  width: 98vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  margin-left: 8.8em;
+.stor-animation-img,
+.stor-animation video {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrerer elementet */
+}
+
+.stor-animation video {
+  display: none;
+}
+
+.stor-animation:hover .stor-animation-img {
+  display: none;
+}
+
+.stor-animation-img {
+  cursor: pointer; /* Tilføjer en pegefinger-cursor */
+}
+
+.stor-animation:hover video {
+  display: block;
 }
 
 .stor-animation h1 {
@@ -366,7 +384,7 @@ main label {
 }
 /*Sektion ''Laer vores stjerneteam at kende''*/
 .team {
-  padding-top: 10%;
+  padding-top: 15%;
 }
 .team img {
   padding: 0;
@@ -376,6 +394,11 @@ main label {
 }
 .team p {
   padding-bottom: 1%;
+}
+
+.teamimg {
+  display: flex;
+  flex-direction: row;
 }
 
 .quote1 {
@@ -403,13 +426,13 @@ main label {
 .lad-os-tale h5 {
   text-align: center;
   font-weight: 700;
+  padding-bottom: 1%;
 }
 
 .lad-os-tale p {
   text-align: left;
   padding-left: 25%;
   padding-right: 25%;
-  padding-top: 1%;
   font-weight: 200;
   -webkit-hyphens: auto;
           hyphens: auto;
@@ -456,7 +479,6 @@ input[type=submit]:hover {
   width: 75%;
   padding-left: 25%;
   padding-bottom: 8%;
-  padding-top: 1em;
 }
 
 /***** Vores projekter side*/
@@ -759,7 +781,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1675px) {
   .team {
     width: 100%;
-    padding: 0;
+    padding-top: 15%;
   }
   .team img {
     width: 70%;
@@ -849,6 +871,9 @@ input[type=submit]:hover {
   .lad-os-tale {
     margin-top: 10%;
     width: 100%;
+  }
+  .lad-os-tale p {
+    padding: 0;
   }
   .projekter-gallery {
     display: flex;

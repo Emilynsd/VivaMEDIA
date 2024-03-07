@@ -18,12 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const image = document.querySelector('.stor-animation-img');
   const video = document.querySelector('.stor-animation video');
 
-  image.addEventListener('mouseover', function() {
-    image.style.display = 'none';
-    video.style.display = 'block';
-    video.play(); // Start videoen
-  });
-
   image.addEventListener('click', function(event) {
     event.stopPropagation(); // Stopper klikbegivenheden fra at nå containeren og stoppe videoen
     image.style.display = 'none';
@@ -37,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
       video.style.display = 'none';
       video.pause(); // Stop videoen
     }
+  });
+
+  video.addEventListener('mouseover', function() {
+    video.play(); // Start videoen
+  });
+
+  video.addEventListener('mouseout', function() {
+    video.pause(); // Stop videoen
   });
 });
 
